@@ -78,7 +78,7 @@ users:
 ```
 
 <p align="center">
-<img src="../images/sa01.png" width="75%">
+<img src="../images/sa01.png" width="50%">
 </p>
 
 9. give it a try
