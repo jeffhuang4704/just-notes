@@ -32,7 +32,7 @@ apiVersion: v1
 data:
   ca.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQW..==
   namespace: ZGVmYXVsdA==
-  token: ZXlKaGJHY2lPaUpT..HB3   :point_left:
+  token: ZXlKaGJHY2lPaUpT..HB3   🔑🔑🔑
 kind: Secret
 metadata:
   annotations:
