@@ -20,7 +20,7 @@ Namespace:           default
 Labels:              <none>
 Annotations:         <none>
 Image pull secrets:  <none>
-Mountable secrets:   jenkins-token-pfjsb
+Mountable secrets:   jenkins-token-pfjsb     🔑🔑🔑
 Tokens:              jenkins-token-pfjsb
 Events:              <none>
 ```
@@ -51,7 +51,7 @@ type: kubernetes.io/service-account-token
 // the token is base64 encoded
 echo ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNkl...  | base64 --decode
 
-eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFnVXpaVzhITk9tcUUwV0RDcX....
+eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFnVXpaVzhITk9tcUUwV0RDcX....  🔑🔑🔑 (we need this)
 ```
 
 5. copy from an kubeconfig file to a new one
