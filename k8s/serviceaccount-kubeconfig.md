@@ -4,7 +4,7 @@
 Since k8s 1.24, the command [kubectl create serviceaccount] doesn't create a token. You need to create it with additional kubectl create token command
 
 
-## Steps
+## Steps (fo k8s 1.23 and earlier)
 
 1. create Service Account
 ```
