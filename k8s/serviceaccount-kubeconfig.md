@@ -12,7 +12,7 @@ kubectl create serviceaccount jenkins --dry-run=client -o yaml > jenkins-sa.yaml
 kubectl apply -f jenkins-sa.yaml
 ```
 
-2. get the secret id belong to this Service Account (for k8s 1.23 and earlier)
+2. (for k8s 1.23 and earlier)get the secret id belong to this Service Account 
 ```
 neuvector@ubuntu2204-E:~/play$ kubectl describe serviceaccount jenkins
 Name:                jenkins
@@ -25,12 +25,12 @@ Tokens:              jenkins-token-pfjsb
 Events:              <none>
 ```
 
-3. :hammer: get the secret id belong to this Service Account (for k8s 1.24 and later)
+3. (for k8s 1.24 and later) get the secret id belong to this Service Account  :hammer: 
 ```
 TODO:
 ```
 
-4. get the token (for k8s 1.23 and earlier)
+4. (for k8s 1.23 and earlier) get the token 
 ```
 neuvector@ubuntu2204-E:~/play$ kubectl get secret jenkins-token-pfjsb -oyaml
 apiVersion: v1
@@ -51,7 +51,7 @@ metadata:
 type: kubernetes.io/service-account-token
 ```
 
-5. :hammer: get the token (for k8s 1.24 and later)
+5. (for k8s 1.24 and later) get the token :hammer:
 ```
 TODO:
 ```
