@@ -4,7 +4,7 @@
 Since k8s 1.24, the command [kubectl create serviceaccount] doesn't create a token. You need to create it with additional kubectl create token command
 
 
-## Steps (fo k8s 1.23 and earlier)
+## Steps 
 
 1. create Service Account
 ```
@@ -12,7 +12,7 @@ kubectl create serviceaccount jenkins --dry-run=client -o yaml > jenkins-sa.yaml
 kubectl apply -f jenkins-sa.yaml
 ```
 
-2. get the secret id belong to this Service Account 
+2a. get the secret id belong to this Service Account (for k8s 1.23 and earlier)
 ```
 neuvector@ubuntu2204-E:~/play$ kubectl describe serviceaccount jenkins
 Name:                jenkins
@@ -25,7 +25,12 @@ Tokens:              jenkins-token-pfjsb
 Events:              <none>
 ```
 
-3. get the token
+2b. :hammer: get the secret id belong to this Service Account (for k8s 1.24 and later)
+```
+TODO:
+```
+
+3a. get the token (for k8s 1.23 and earlier)
 ```
 neuvector@ubuntu2204-E:~/play$ kubectl get secret jenkins-token-pfjsb -oyaml
 apiVersion: v1
@@ -44,6 +49,11 @@ metadata:
   resourceVersion: "10331246"
   uid: ea1cca01-5c65-4d0d-b210-f9b59b261dca
 type: kubernetes.io/service-account-token
+```
+
+3b. :hammer: get the token (for k8s 1.24 and later)
+```
+TODO:
 ```
 
 4. decode the token and save the decoded base64 string
