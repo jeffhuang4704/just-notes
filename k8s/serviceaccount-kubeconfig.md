@@ -1,8 +1,8 @@
 ## User ServiceAccount in kube config
 
-:warning:
+:warning: :warning: :warning:
 Since k8s 1.24, the command [kubectl create serviceaccount] doesn't create a token. You need to create it with additional kubectl create token command
-:warning:
+
 
 ## Steps
 
@@ -32,7 +32,7 @@ apiVersion: v1
 data:
   ca.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQW..==
   namespace: ZGVmYXVsdA==
-  token: ZXlKaGJHY2lPaUpT..HB3
+  token: ZXlKaGJHY2lPaUpT..HB3   :point_left:
 kind: Secret
 metadata:
   annotations:
