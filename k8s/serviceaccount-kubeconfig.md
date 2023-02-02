@@ -87,7 +87,7 @@ kubectl create rolebinding cicd-binding --role=cicd-role --serviceaccount=defaul
 kubectl apply -f cicd-binding.yaml
 ```
 
-9. Test
+9. :grinning: Test
 ```
 kubectl auth can-i create service --as system:serviceaccount:default:jenkins -n default
 (expect yes)
