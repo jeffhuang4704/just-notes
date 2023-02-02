@@ -12,7 +12,7 @@ kubectl create serviceaccount jenkins --dry-run=client -o yaml > jenkins-sa.yaml
 kubectl apply -f jenkins-sa.yaml
 ```
 
-2a. get the secret id belong to this Service Account (for k8s 1.23 and earlier)
+2. get the secret id belong to this Service Account (for k8s 1.23 and earlier)
 ```
 neuvector@ubuntu2204-E:~/play$ kubectl describe serviceaccount jenkins
 Name:                jenkins
@@ -25,12 +25,12 @@ Tokens:              jenkins-token-pfjsb
 Events:              <none>
 ```
 
-2b. :hammer: get the secret id belong to this Service Account (for k8s 1.24 and later)
+3. :hammer: get the secret id belong to this Service Account (for k8s 1.24 and later)
 ```
 TODO:
 ```
 
-3a. get the token (for k8s 1.23 and earlier)
+4. get the token (for k8s 1.23 and earlier)
 ```
 neuvector@ubuntu2204-E:~/play$ kubectl get secret jenkins-token-pfjsb -oyaml
 apiVersion: v1
@@ -51,12 +51,12 @@ metadata:
 type: kubernetes.io/service-account-token
 ```
 
-3b. :hammer: get the token (for k8s 1.24 and later)
+5. :hammer: get the token (for k8s 1.24 and later)
 ```
 TODO:
 ```
 
-4. decode the token and save the decoded base64 string
+6. decode the token and save the decoded base64 string
 ```
 // the token is base64 encoded
 echo ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNkl...  | base64 --decode
@@ -64,12 +64,12 @@ echo ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNkl...  | base64 --decode
 eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFnVXpaVzhITk9tcUUwV0RDcX....  🔑🔑🔑 (we need this)
 ```
 
-5. copy from an kubeconfig file to a new one
+7. copy from an kubeconfig file to a new one
 ```
 cp ~/.kube/config jenkins.conf
 ```
 
-6. put the token in the `jenkins.conf`
+8. put the token in the `jenkins.conf`
 ```
 users:
 - name: kubernetes-admin
@@ -77,7 +77,7 @@ users:
    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFn...
 ```
 
-7. give it a try
+9. give it a try
 ```
 kubectl --kubeconfig jenkins.conf get pod
 
@@ -86,7 +86,7 @@ neuvector@ubuntu2204-E:~/play$ kubectl --kubeconfig jenkins.conf get pod
 Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:default:jenkins" cannot list resource "pods" in API group "" in the namespace "default"
 ```
 
-8. give permission (RBAC)
+10. give permission (RBAC)
 ```
 // create role (add namespace if it's not default)
 kubectl create role cicd-role --verb=create,update,list --resource=deployments.apps,services --dry-run=client -o yaml > cicd-role.yaml
@@ -97,7 +97,7 @@ kubectl create rolebinding cicd-binding --role=cicd-role --serviceaccount=defaul
 kubectl apply -f cicd-binding.yaml
 ```
 
-9. :grinning: Test
+11. :grinning: Test
 ```
 kubectl auth can-i create service --as system:serviceaccount:default:jenkins -n default
 (expect yes)
