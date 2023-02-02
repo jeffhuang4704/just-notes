@@ -12,7 +12,7 @@ kubectl create serviceaccount jenkins --dry-run=client -o yaml > jenkins-sa.yaml
 kubectl apply -f jenkins-sa.yaml
 ```
 
-2. (for k8s 1.23 and earlier)get the secret id belong to this Service Account 
+2. (for k8s 1.23 and earlier) get the secret id belong to this Service Account 
 ```
 neuvector@ubuntu2204-E:~/play$ kubectl describe serviceaccount jenkins
 Name:                jenkins
@@ -20,12 +20,12 @@ Namespace:           default
 Labels:              <none>
 Annotations:         <none>
 Image pull secrets:  <none>
-Mountable secrets:   jenkins-token-pfjsb     🔑🔑🔑
-Tokens:              jenkins-token-pfjsb
+Mountable secrets:   jenkins-token-pfjsb    👈👈👈
+Tokens:              jenkins-token-pfjsb    
 Events:              <none>
 ```
 
-3. (for k8s 1.24 and later) get the secret id belong to this Service Account  :hammer: 
+3. (for k8s 1.24 and later) create token to this Service Account  :hammer: 
 ```
 TODO:
 ```
@@ -37,7 +37,7 @@ apiVersion: v1
 data:
   ca.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQW..==
   namespace: ZGVmYXVsdA==
-  token: ZXlKaGJHY2lPaUpT..HB3   🔑🔑🔑
+  token: ZXlKaGJHY2lPaUpT..HB3      👈👈👈
 kind: Secret
 metadata:
   annotations:
@@ -61,7 +61,7 @@ TODO:
 // the token is base64 encoded
 echo ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNkl...  | base64 --decode
 
-eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFnVXpaVzhITk9tcUUwV0RDcX....  🔑🔑🔑 (we need this)
+eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFnVXpaVzhITk9tcUUwV0RDcX....  👈👈👈 (we need this)
 ```
 
 7. copy from an kubeconfig file to a new one
