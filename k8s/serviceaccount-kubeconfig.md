@@ -77,6 +77,10 @@ users:
    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFn...
 ```
 
+<p align="center">
+<img src="./images/sa01.png" width="75%">
+</p>
+
 9. give it a try
 ```
 kubectl --kubeconfig jenkins.conf get pod
@@ -109,5 +113,4 @@ kubectl auth can-i get pod --as system:serviceaccount:default:jenkins -n default
 neuvector@ubuntu2204-E:~/play$ kubectl --kubeconfig jenkins.conf get deployments  🔑🔑🔑
 No resources found in default namespace.
 ```
-
 
