@@ -59,7 +59,7 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFnVXpaVzhITk9tcUUwV0RDcX....  🔑🔑
 cp ~/.kube/config jenkins.conf
 ```
 
-6. put the token in the jenkins.conf
+6. put the token in the `jenkins.conf`
 ```
 users:
 - name: kubernetes-admin
@@ -95,6 +95,7 @@ kubectl auth can-i create service --as system:serviceaccount:default:jenkins -n 
 kubectl auth can-i get pod --as system:serviceaccount:default:jenkins -n default
 (expect no)
 
+# now we can use the jenkins.conf
 neuvector@ubuntu2204-E:~/play$ kubectl --kubeconfig jenkins.conf get deployments  🔑🔑🔑
 No resources found in default namespace.
 ```
