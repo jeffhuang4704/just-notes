@@ -59,9 +59,9 @@ Namespace:           default
 Labels:              <none>
 Annotations:         <none>
 Image pull secrets:  <none>
-Mountable secrets:   <none>
-Tokens:              <none>
-Events:              <none>
+Mountable secrets:   <none>   👈👈👈 k8s 1.24 and later won't generate this
+Tokens:              <none>   👈👈👈 k8s 1.24 and later won't generate this 
+Events:              <none>   
 
 neuvector@ubuntu2204d:~/play$ kubectl create token jenkins  👈👈👈
 eyJhbGciOiJSUzI1NiI...  👈👈👈 (this is the raw token, no need to base64 decode)
@@ -118,3 +118,10 @@ neuvector@ubuntu2204-E:~/play$ kubectl --kubeconfig jenkins.conf get deployments
 No resources found in default namespace.
 ```
 
+## Notes
+
+The token we got is actually a JWT token, we can decode it.
+
+<p align="center">
+<img src="../images/sa02.png" width="50%">
+</p>
