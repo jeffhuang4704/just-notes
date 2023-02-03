@@ -12,7 +12,7 @@ kubectl create serviceaccount jenkins --dry-run=client -o yaml > jenkins-sa.yaml
 kubectl apply -f jenkins-sa.yaml
 ```
 
-2. (for k8s 1.23 and earlier) get the secret id belong to this Service Account 
+2. (for k8s 1.23 and earlier) get the token belong to this Service Account and decode it
 ```
 neuvector@ubuntu2204-E:~/play$ kubectl describe serviceaccount jenkins
 Name:                jenkins
@@ -23,28 +23,8 @@ Image pull secrets:  <none>
 Mountable secrets:   jenkins-token-pfjsb    👈👈👈
 Tokens:              jenkins-token-pfjsb    
 Events:              <none>
-```
-
-3. (for k8s 1.24 and later) create token to this Service Account   
-```
-neuvector@ubuntu2204d:~/play$ kubectl describe serviceaccount jenkins
-Name:                jenkins
-Namespace:           default
-Labels:              <none>
-Annotations:         <none>
-Image pull secrets:  <none>
-Mountable secrets:   <none>
-Tokens:              <none>
-Events:              <none>
-
-neuvector@ubuntu2204d:~/play$ kubectl create token jenkins  👈👈👈
-eyJhbGciOiJSUzI1NiI...
 
 
-```
-
-4. (for k8s 1.23 and earlier) get the token 
-```
 neuvector@ubuntu2204-E:~/play$ kubectl get secret jenkins-token-pfjsb -oyaml
 apiVersion: v1
 data:
@@ -62,23 +42,38 @@ metadata:
   resourceVersion: "10331246"
   uid: ea1cca01-5c65-4d0d-b210-f9b59b261dca
 type: kubernetes.io/service-account-token
-```
 
 
-5. (for k8s 1.23 and earlier) decode the token and save the decoded base64 string
-```
+// decode the token and save the decoded base64 string
 // the token is base64 encoded
 echo ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNkl...  | base64 --decode
 
 eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFnVXpaVzhITk9tcUUwV0RDcX....  👈👈👈 (we need this)
 ```
 
-6. copy from an kubeconfig file to a new one
+3. (for k8s 1.24 and later) create token to this Service Account and get its value
+```
+neuvector@ubuntu2204d:~/play$ kubectl describe serviceaccount jenkins
+Name:                jenkins
+Namespace:           default
+Labels:              <none>
+Annotations:         <none>
+Image pull secrets:  <none>
+Mountable secrets:   <none>
+Tokens:              <none>
+Events:              <none>
+
+neuvector@ubuntu2204d:~/play$ kubectl create token jenkins  👈👈👈
+eyJhbGciOiJSUzI1NiI...  👈👈👈 (this is the raw token, no need to base64 decode)
+
+```
+
+4. copy from an kube config file to a new one
 ```
 cp ~/.kube/config jenkins.conf
 ```
 
-7. put the token in the `jenkins.conf`
+5. put the token in the `jenkins.conf`
 ```
 users:
 - name: kubernetes-admin
@@ -90,7 +85,7 @@ users:
 <img src="../images/sa01.png" width="50%">
 </p>
 
-8. give it a try
+6. give it a try
 ```
 kubectl --kubeconfig jenkins.conf get pod
 
@@ -99,7 +94,7 @@ neuvector@ubuntu2204-E:~/play$ kubectl --kubeconfig jenkins.conf get pod
 Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:default:jenkins" cannot list resource "pods" in API group "" in the namespace "default"
 ```
 
-9. give permission (RBAC)
+7. give permission (RBAC)
 ```
 // create role (add namespace if it's not default)
 kubectl create role cicd-role --verb=create,update,list --resource=deployments.apps,services --dry-run=client -o yaml > cicd-role.yaml
@@ -110,7 +105,7 @@ kubectl create rolebinding cicd-binding --role=cicd-role --serviceaccount=defaul
 kubectl apply -f cicd-binding.yaml
 ```
 
-10. :grinning: Test
+8. :grinning: Test
 ```
 kubectl auth can-i create service --as system:serviceaccount:default:jenkins -n default
 (expect yes)
