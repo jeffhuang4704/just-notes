@@ -25,9 +25,22 @@ Tokens:              jenkins-token-pfjsb
 Events:              <none>
 ```
 
-3. (for k8s 1.24 and later) create token to this Service Account  :hammer: 
+3. (for k8s 1.24 and later) create token to this Service Account   
 ```
-TODO:
+neuvector@ubuntu2204d:~/play$ kubectl describe serviceaccount jenkins
+Name:                jenkins
+Namespace:           default
+Labels:              <none>
+Annotations:         <none>
+Image pull secrets:  <none>
+Mountable secrets:   <none>
+Tokens:              <none>
+Events:              <none>
+
+neuvector@ubuntu2204d:~/play$ kubectl create token jenkins  👈👈👈
+eyJhbGciOiJSUzI1NiI...
+
+
 ```
 
 4. (for k8s 1.23 and earlier) get the token 
@@ -51,12 +64,8 @@ metadata:
 type: kubernetes.io/service-account-token
 ```
 
-5. (for k8s 1.24 and later) get the token :hammer:
-```
-TODO:
-```
 
-6. decode the token and save the decoded base64 string
+5. (for k8s 1.23 and earlier) decode the token and save the decoded base64 string
 ```
 // the token is base64 encoded
 echo ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNkl...  | base64 --decode
@@ -64,12 +73,12 @@ echo ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNkl...  | base64 --decode
 eyJhbGciOiJSUzI1NiIsImtpZCI6IjhaNzQtNmhYbTFnVXpaVzhITk9tcUUwV0RDcX....  👈👈👈 (we need this)
 ```
 
-7. copy from an kubeconfig file to a new one
+6. copy from an kubeconfig file to a new one
 ```
 cp ~/.kube/config jenkins.conf
 ```
 
-8. put the token in the `jenkins.conf`
+7. put the token in the `jenkins.conf`
 ```
 users:
 - name: kubernetes-admin
@@ -81,7 +90,7 @@ users:
 <img src="../images/sa01.png" width="50%">
 </p>
 
-9. give it a try
+8. give it a try
 ```
 kubectl --kubeconfig jenkins.conf get pod
 
@@ -90,7 +99,7 @@ neuvector@ubuntu2204-E:~/play$ kubectl --kubeconfig jenkins.conf get pod
 Error from server (Forbidden): pods is forbidden: User "system:serviceaccount:default:jenkins" cannot list resource "pods" in API group "" in the namespace "default"
 ```
 
-10. give permission (RBAC)
+9. give permission (RBAC)
 ```
 // create role (add namespace if it's not default)
 kubectl create role cicd-role --verb=create,update,list --resource=deployments.apps,services --dry-run=client -o yaml > cicd-role.yaml
@@ -101,7 +110,7 @@ kubectl create rolebinding cicd-binding --role=cicd-role --serviceaccount=defaul
 kubectl apply -f cicd-binding.yaml
 ```
 
-11. :grinning: Test
+10. :grinning: Test
 ```
 kubectl auth can-i create service --as system:serviceaccount:default:jenkins -n default
 (expect yes)
