@@ -45,7 +45,7 @@ add environment
 value: "1"
 ```
 
-### add a service for controller REST API, so we can use curl directly and get its port (3xxxx) via [kubectl get svc -n neuvector]
+### add a service for controller REST API, so we can use curl directly
 ```
 neuvector@ubuntu2204d:~$ cat controller_nodeport.yaml
 apiVersion: v1
