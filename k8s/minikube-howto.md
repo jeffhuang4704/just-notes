@@ -2,51 +2,51 @@
 
 ### on an Ubuntu box
 ```
-        install docker, https://docs.docker.com/engine/install/ubuntu/
-        docker post-installation, https://docs.docker.com/engine/install/linux-postinstall/
+install docker, https://docs.docker.com/engine/install/ubuntu/
+docker post-installation, https://docs.docker.com/engine/install/linux-postinstall/
 
-        install latest golang, https://go.dev/doc/install
-        install latest delve, https://github.com/go-delve/delve
-                # Install the latest release:
-                $ go install github.com/go-delve/delve/cmd/dlv@latest
+install latest golang, https://go.dev/doc/install
+install latest delve, https://github.com/go-delve/delve
+        # Install the latest release:
+        $ go install github.com/go-delve/delve/cmd/dlv@latest
 
-        install minikube, https://minikube.sigs.k8s.io/docs/start/
-        install kubectl, https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+install minikube, https://minikube.sigs.k8s.io/docs/start/
+install kubectl, https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 
-        install jq
+install jq
 ```
 
 ### start/stop/delete minikube,
 ```
-        minikube start --memory 6144 --cpus 2
+minikube start --memory 6144 --cpus 2
 
-        minikube stop
-        minikube delete
+minikube stop
+minikube delete
 ```
 
 ### install NeuVector (use docker part yaml)
 ```
-        https://open-docs.neuvector.com/deploying/kubernetes
+https://open-docs.neuvector.com/deploying/kubernetes
 ```
 
 ### modify the controller deployment to enable debug log
 ```
-        kubectl edit deployment neuvector-controller-pod -n neuvector
-        add environment
-        - name: CTRL_PATH_DEBUG
-          value: "true"
+kubectl edit deployment neuvector-controller-pod -n neuvector
+add environment
+- name: CTRL_PATH_DEBUG
+    value: "true"
 ```
 
 ### modify the encofer daemonset to disable self protection (we need to overwrite controller binary)
-        kubectl edit daemonset neuvector-enforcer-pod -n neuvector
-        add environment
-        - name: ENFORCER_SKIP_NV_PROTECT
-        value: "1"
-
-### add a service for controller REST API, so we can use curl directly
 ```
-   and get its port (3xxxx) via [kubectl get svc -n neuvector]
+kubectl edit daemonset neuvector-enforcer-pod -n neuvector
+add environment
+- name: ENFORCER_SKIP_NV_PROTECT
+value: "1"
+```
 
+### add a service for controller REST API, so we can use curl directly and get its port (3xxxx) via [kubectl get svc -n neuvector]
+```
 neuvector@ubuntu2204d:~$ cat controller_nodeport.yaml
 apiVersion: v1
 kind: Service
@@ -70,9 +70,9 @@ neuvector-service-controller-debug   NodePort    10.100.233.196   <none>        
 
 ### add environment varible on the Ubuntu box, edit ~/.bashrc
 ```
-        ## neuvector controller debug
-        export K8sNodeIP=192.168.49.2    # this can be get via [minikube ip]
-        export ControllerSvcPORT=32539   # this is the service we just added in previous step
+## neuvector controller debug
+export K8sNodeIP=192.168.49.2    # this can be get via [minikube ip]
+export ControllerSvcPORT=32539   # this is the service we just added in previous step
 
    we can then use curl to call REST api directly
 
@@ -83,14 +83,14 @@ curl -k -H "Content-Type: application/json" -H "X-Auth-Token: $TOKEN" "https://$
 
 ### modify the neuvector-service-webui service, change its type from LoadBalancer to NodePort
 ```
-   kubectl edit svc neuvector-service-webui -n neuvector
+kubectl edit svc neuvector-service-webui -n neuvector
 
-   and get it's port 3xxxx (this case is 30869)
+and get it's port 3xxxx (this case is 30869)
 
-        neuvector@ubuntu2204d:~$ kubectl get svc -n neuvector
-        NAME                                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)
-        neuvector-service-controller-debug   NodePort    10.100.233.196   <none>        10443:32539/TCP
-        neuvector-service-webui              NodePort    10.100.197.50    <none>        8443:30869/TCP
+    neuvector@ubuntu2204d:~$ kubectl get svc -n neuvector
+    NAME                                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)
+    neuvector-service-controller-debug   NodePort    10.100.233.196   <none>        10443:32539/TCP
+    neuvector-service-webui              NodePort    10.100.197.50    <none>        8443:30869/TCP
 ```
 
 ### SSH Proxy Tunnel
@@ -119,30 +119,30 @@ curl -k -H "Content-Type: application/json" -H "X-Auth-Token: $TOKEN" "https://$
 
 ### Delve Debug
 ```
-        [x] need to replace the controller binary without optimization,
-        jeff@SUSE-387793:~/go/src/github.com/neuvector/neuvector/controller$ cat Makefile
-        all:
-                # go build --ldflags '-extldflags "-static"'
-                # go build -ldflags='-s -w'     # release build
-                go build -gcflags=all="-N -l"   # debug build
+[x] need to replace the controller binary without optimization,
+jeff@SUSE-387793:~/go/src/github.com/neuvector/neuvector/controller$ cat Makefile
+all:
+        # go build --ldflags '-extldflags "-static"'
+        # go build -ldflags='-s -w'     # release build
+        go build -gcflags=all="-N -l"   # debug build
 
-        [x] build the debug binary and copy to the Ubuntu box
-        jeff@SUSE-387793:~/go/src/github.com/neuvector/neuvector/controller$ cat cp2lab_e.sh
-        scp controller neuvector@10.1.45.44:~/debug/controller
+[x] build the debug binary and copy to the Ubuntu box
+jeff@SUSE-387793:~/go/src/github.com/neuvector/neuvector/controller$ cat cp2lab_e.sh
+scp controller neuvector@10.1.45.44:~/debug/controller
 
-        echo "done.."
-        echo "goes to lab_E (10.1.45.44) and execute the ~/debug/deployController.sh"
+echo "done.."
+echo "goes to lab_E (10.1.45.44) and execute the ~/debug/deployController.sh"
 
-        [x] after we have the debug controller, replace it with the one currently running
-        ~/debug/deployController.sh
+[x] after we have the debug controller, replace it with the one currently running
+~/debug/deployController.sh
 
-        [x] on the Ubuntu box, start delve server
-        neuvector@ubuntu2204d:~$ cat dlv_server.sh
-        #! /usr/bin/bash
+[x] on the Ubuntu box, start delve server
+neuvector@ubuntu2204d:~$ cat dlv_server.sh
+#! /usr/bin/bash
 
-        CONTROLLER_PID=`pidof controller`
-        sudo /home/neuvector/go/bin/dlv attach ${CONTROLLER_PID} --headless --accept-multiclient --only-same-user=false --listen=:12345
+CONTROLLER_PID=`pidof controller`
+sudo /home/neuvector/go/bin/dlv attach ${CONTROLLER_PID} --headless --accept-multiclient --only-same-user=false --listen=:12345
 
-        [x] on the build environment (has the source code), connect to the server,
-                dlv connect 10.1.45.43:12345
+[x] on the build environment (has the source code), connect to the server,
+        dlv connect 10.1.45.43:12345
 ```
