@@ -9,7 +9,7 @@
 ### verify trace (complete version)
 - 🏷️ [verify an image using tag (public key) - complete trace](#verify-an-image-using-tag-public-key---complete-trace)
 - 🏷️ [verify an image using tag (keyless) - complete trace](#verify-an-image-using-tag-keyless---complete-trace)
-- 🔢 [verify an image using digest (public key) - complete version]
+- 🔢 [verify an image using digest (public key) - complete version](#verify-an-image-using-digest-public-key---complete-version)
 - 🔢 [verify an image using digest (keyless) - complete version](#verify-an-image-using-digest-keyless---complete-version)
 
 ### sign trace
@@ -70,7 +70,7 @@ TODO
 ```
 cosign verify --key cosign.pub chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d
 ```
-  searchme1
+  
 ```
 ```
 
@@ -78,7 +78,6 @@ cosign verify --key cosign.pub chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b
 ```
 TODO
 ```
-searchme2
 
 ### verify an image using tag (public key) - complete trace 
 ```
@@ -430,7 +429,7 @@ TODO
 ```
 cosign verify --key cosign.pub chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d 
 ```
-searchme3
+
 ```
 neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign verify --key cosign.pub chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d
 2023/02/17 11:01:05 --> GET https://index.docker.io/v2/
