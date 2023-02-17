@@ -3,7 +3,13 @@
 ### sign an image
 
 ```
-neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign sign --key cosign.key chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d
+# command
+# use -d to observe the traffic
+```
+
+cosign sign --key cosign.key chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d
+```
+👉 neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign sign --key cosign.key chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d
 Enter password for private key:
 2023/02/17 09:28:03 --> GET https://index.docker.io/v2/
 2023/02/17 09:28:03 GET /v2/ HTTP/1.1
