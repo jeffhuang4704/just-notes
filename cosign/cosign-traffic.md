@@ -2,9 +2,13 @@
 
 - [verify an image using tag (public key) - short version](#verify-an-image-using-tag-public-key---short-version)
 - [verify an image using tag (keyless) - short version](#verify-an-image-using-tag-keyless---short-version)
+- [verify an image using digest (public key)]  - short version
+- [verify an image using digest (keyless)]  - short version
 
 - [verify an image using tag (public key) - complete trace](#verify-an-image-using-tag-public-key---complete-trace)
 - [verify an image using tag (keyless) - complete trace](#verify-an-image-using-tag-keyless---complete-trace)
+- [verify an image using digest (public key)]  - complete version
+- [verify an image using digest (keyless)]  - complete version
 
 - [sign an image - keypair](#sign-an-image---keypair)
 
@@ -55,6 +59,19 @@ The following checks were performed on each of these signatures:
 
 
 ### verify an image using tag (keyless) - short version
+```
+TODO
+```
+
+### verify an image using digest (public key) - short version
+```
+cosign verify --key cosign.pub chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d
+```
+
+```
+```
+
+### verify an image using digest (keyless) - short version
 ```
 TODO
 ```
@@ -405,6 +422,140 @@ The following checks were performed on each of these signatures:
 ```
 TODO
 ```
+
+### verify an image using digest (public key) - complete version
+```
+cosign verify --key cosign.pub chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d 
+```
+
+```
+neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign verify --key cosign.pub chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d
+2023/02/17 11:01:05 --> GET https://index.docker.io/v2/
+2023/02/17 11:01:05 GET /v2/ HTTP/1.1
+Host: index.docker.io
+User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
+Accept-Encoding: gzip
+
+
+2023/02/17 11:01:10 <-- dial tcp: lookup index.docker.io: i/o timeout GET https://index.docker.io/v2/ (5.000872329s)
+2023/02/17 11:01:10 --> GET https://index.docker.io/v2/
+2023/02/17 11:01:10 GET /v2/ HTTP/1.1
+Host: index.docker.io
+User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
+Accept-Encoding: gzip
+
+
+2023/02/17 11:01:10 <-- 401 https://index.docker.io/v2/ (303.866248ms)
+2023/02/17 11:01:10 HTTP/1.1 401 Unauthorized
+Content-Length: 87
+Content-Type: application/json
+Date: Fri, 17 Feb 2023 19:01:10 GMT
+Docker-Distribution-Api-Version: registry/2.0
+Strict-Transport-Security: max-age=31536000
+Www-Authenticate: Bearer realm="https://auth.docker.io/token",service="registry.docker.io"
+
+{"errors":[{"code":"UNAUTHORIZED","message":"authentication required","detail":null}]}
+
+2023/02/17 11:01:10 --> GET https://auth.docker.io/token?scope=repository%3Achihjenhuang%2Fcosign1%3Apull&service=registry.docker.io [body redacted: basic token response contains credentials]
+2023/02/17 11:01:10 GET /token?scope=repository%3Achihjenhuang%2Fcosign1%3Apull&service=registry.docker.io HTTP/1.1
+Host: auth.docker.io
+User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
+Authorization: <redacted>
+Accept-Encoding: gzip
+
+
+2023/02/17 11:01:10 <-- 200 https://auth.docker.io/token?scope=repository%3Achihjenhuang%2Fcosign1%3Apull&service=registry.docker.io (252.36884ms) [body redacted: basic token response contains credentials]
+2023/02/17 11:01:10 HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=utf-8
+Date: Fri, 17 Feb 2023 19:01:10 GMT
+Strict-Transport-Security: max-age=31536000
+X-Trace-Id: bb31111e801ef14b6bb11b58242601f1
+
+
+2023/02/17 11:01:10 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/sha256-4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d.sig
+2023/02/17 11:01:10 GET /v2/chihjenhuang/cosign1/manifests/sha256-4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d.sig HTTP/1.1
+Host: index.docker.io
+User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
+Accept: application/vnd.docker.distribution.manifest.v1+json,application/vnd.docker.distribution.manifest.v1+prettyjws,application/vnd.docker.distribution.manifest.v2+json,application/vnd.oci.image.manifest.v1+json,application/vnd.docker.distribution.manifest.list.v2+json,application/vnd.oci.image.index.v1+json
+Authorization: <redacted>
+Accept-Encoding: gzip
+
+
+2023/02/17 11:01:10 <-- 200 https://index.docker.io/v2/chihjenhuang/cosign1/manifests/sha256-4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d.sig (119.641873ms)
+2023/02/17 11:01:10 HTTP/1.1 200 OK
+Content-Length: 558
+Content-Type: application/vnd.oci.image.manifest.v1+json
+Date: Fri, 17 Feb 2023 19:01:10 GMT
+Docker-Content-Digest: sha256:7ebe8964225fa4619b53aa35416ef0246c037e36ddf81776b21b15e1dda2262b
+Docker-Distribution-Api-Version: registry/2.0
+Docker-Ratelimit-Source: aa244511-db56-4b1d-9536-8249869527c1
+Etag: "sha256:7ebe8964225fa4619b53aa35416ef0246c037e36ddf81776b21b15e1dda2262b"
+Ratelimit-Limit: 200;w=21600
+Ratelimit-Remaining: 195;w=21600
+Strict-Transport-Security: max-age=31536000
+
+{"schemaVersion":2,"mediaType":"application/vnd.oci.image.manifest.v1+json","config":{"mediaType":"application/vnd.oci.image.config.v1+json","size":247,"digest":"sha256:85ad8e17d3d7c00664855c638832bd99f32d42542c2d587851410a45a7f60b95"},"layers":[{"mediaType":"application/vnd.dev.cosign.simplesigning.v1+json","size":252,"digest":"sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc","annotations":{"dev.cosignproject.cosign/signature":"MEYCIQCPH7NJAIfrB6BZN91dV0o7l/i11muXrvrAh100jDMMhAIhAPsLH0oXb2OPITXRpWBMUd3vHtz5Ks5pql2Hr6t/IJXw"}}]}
+2023/02/17 11:01:10 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc [body redacted: omitting binary blobs from logs]
+2023/02/17 11:01:10 GET /v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc HTTP/1.1
+Host: index.docker.io
+User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
+Authorization: <redacted>
+Accept-Encoding: gzip
+
+
+2023/02/17 11:01:11 <-- 307 https://index.docker.io/v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc (80.658845ms) [body redacted: omitting binary blobs from logs]
+2023/02/17 11:01:11 HTTP/1.1 307 Temporary Redirect
+Content-Type: application/octet-stream
+Date: Fri, 17 Feb 2023 19:01:11 GMT
+Docker-Distribution-Api-Version: registry/2.0
+Location: https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676663471-kiACVxj5NdwgP1N5CBdwpkEtMi8%3D
+Strict-Transport-Security: max-age=31536000
+Content-Length: 0
+
+
+2023/02/17 11:01:11 --> GET https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676663471-kiACVxj5NdwgP1N5CBdwpkEtMi8%3D [body redacted: omitting binary blobs from logs]
+2023/02/17 11:01:11 GET /registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676663471-kiACVxj5NdwgP1N5CBdwpkEtMi8%3D HTTP/1.1
+Host: production.cloudflare.docker.com
+User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
+Referer: https://index.docker.io/v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc
+Accept-Encoding: gzip
+
+
+2023/02/17 11:01:11 <-- 200 https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676663471-kiACVxj5NdwgP1N5CBdwpkEtMi8%3D (144.39281ms) [body redacted: omitting binary blobs from logs]
+2023/02/17 11:01:11 HTTP/2.0 200 OK
+Content-Length: 252
+Accept-Ranges: bytes
+Age: 4810
+Cache-Control: public, max-age=14400
+Cf-Cache-Status: HIT
+Cf-Ray: 79b0c528ddfd9435-SJC
+Content-Type: application/octet-stream
+Date: Fri, 17 Feb 2023 19:01:11 GMT
+Etag: "0390a29c82c60bbd5463f649ce9b2a4f"
+Expires: Fri, 17 Feb 2023 23:01:11 GMT
+Last-Modified: Fri, 17 Feb 2023 16:53:35 GMT
+Server: cloudflare
+Vary: Accept-Encoding
+X-Amz-Id-2: I4zZB5QuXWezAdbtuRAqzvNhkQVuumyX/NzsByuooVK0ZHVukjqluwHq7Rj1U+1SRaMJjj33U08=
+X-Amz-Request-Id: VBQ4RHEPE0MPDQFN
+X-Amz-Version-Id: q.9iy1J1iGELKxpcUaIyg.DQZQV6yGGO
+
+
+
+Verification for index.docker.io/chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d --
+The following checks were performed on each of these signatures:
+  - The cosign claims were validated
+  - The signatures were verified against the specified public key
+
+[{"critical":{"identity":{"docker-reference":"index.docker.io/chihjenhuang/cosign1"},"image":{"docker-manifest-digest":"sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d"},"type":"cosign container image signature"},"optional":null}]
+```
+
+### verify an image using digest (keyless) - complete version
+```
+TODO
+```
+
 
 ### sign an image - keypair
 
