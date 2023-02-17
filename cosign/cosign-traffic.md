@@ -5,9 +5,11 @@
 ```
 # command
 # use -d to observe the traffic
-```
 
 cosign sign --key cosign.key chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d
+```
+
+
 ```
 👉 neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign sign --key cosign.key chihjenhuang/cosign1@sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d -d
 Enter password for private key:
@@ -46,7 +48,7 @@ Strict-Transport-Security: max-age=31536000
 X-Trace-Id: 313a56b8692e64377e5a0348bf01f6a8
 
 
-2023/02/17 09:28:03 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d
+👉 2023/02/17 09:28:03 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d
 2023/02/17 09:28:03 GET /v2/chihjenhuang/cosign1/manifests/sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d HTTP/1.1
 Host: index.docker.io
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
@@ -109,7 +111,8 @@ Strict-Transport-Security: max-age=31536000
       }
    ]
 }
-Pushing signature to: index.docker.io/chihjenhuang/cosign1
+
+👉👉👉 Pushing signature to: index.docker.io/chihjenhuang/cosign1
 2023/02/17 09:28:03 --> GET https://index.docker.io/v2/
 2023/02/17 09:28:03 GET /v2/ HTTP/1.1
 Host: index.docker.io
