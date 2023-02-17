@@ -5,6 +5,7 @@
 0️⃣ cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
 ```
 
+1️⃣
 ```
 👉 neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign verify --key cosign.pub chihjenhuang/cosign
 1:t1 -d
