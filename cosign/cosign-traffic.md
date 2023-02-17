@@ -6,32 +6,32 @@ cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
 ```
 
 ```
-👉 neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
+0️⃣ neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
 
-GET https://index.docker.io/v2/
+1️⃣ GET https://index.docker.io/v2/
 HTTP/1.1 401 Unauthorized
 
-GET https://auth.docker.io/token?scope=repository...
+2️⃣ GET https://auth.docker.io/token?scope=repository...
 HTTP/1.1 200 OK
 
-GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/t1
+3️⃣ GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/t1
 2023/02/17 09:41:00 HTTP/1.1 200 OK
 Content-Length: 1570
 
-GET https://index.docker.io/v2/
+4️⃣ GET https://index.docker.io/v2/
 HTTP/1.1 401 Unauthorized
 
-GET https://auth.docker.io/token?scope=repository
+5️⃣ GET https://auth.docker.io/token?scope=repository
 HTTP/1.1 200 OK
 
-GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/sha256-4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d.sig
+6️⃣ GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/sha256-4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d.sig
 2023/02/17 09:41:41 HTTP/1.1 200 OK
 Content-Length: 558
 
-GET https://index.docker.io/v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc 
+7️⃣ GET https://index.docker.io/v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc 
 HTTP/1.1 307 Temporary Redirect
 
-GET https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676658661-iL8RZAoYgcwML%2FjTAwv5bNKth4E%3D [body redacted: omitting binary blobs from logs]
+8️⃣ GET https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676658661-iL8RZAoYgcwML%2FjTAwv5bNKth4E%3D [body redacted: omitting binary blobs from logs]
 2023/02/17 09:41:01 GET /registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676658661-iL8RZAoYgcwML%2FjTAwv5bNKth4E%3D HTTP/1.1
 HTTP/2.0 200 OK
 Content-Length: 252
