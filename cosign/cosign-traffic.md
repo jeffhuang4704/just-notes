@@ -1,10 +1,10 @@
 ## cosign related traffic
 
 - [verify an image using tag (public key) - short version](#verify-an-image-using-tag-public-key---short-version)
-- [verify an image using tag (keyless) - short version]()
+- [verify an image using tag (keyless) - short version](#verify-an-image-using-tag-keyless---short-version)
 
 - [verify an image using tag (public key) - complete trace](#verify-an-image-using-tag-public-key---complete-trace)
-- [verify an image using tag (keyless) - complete trace]()
+- [verify an image using tag (keyless) - complete trace](#verify-an-image-using-tag-keyless---complete-trace)
 
 - [sign an image - keypair](#sign-an-image---keypair)
 
