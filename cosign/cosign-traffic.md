@@ -1,6 +1,6 @@
 ## cosign related traffic
 
-### verify an image using tag (public key) - short version (running under login user, need to try not-login-user)
+### verify an image using tag (public key) - short version 
 ```
 cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
 ```
@@ -45,7 +45,7 @@ The following checks were performed on each of these signatures:
 
 ```
 
-### verify an image using tag (public key) - complete trace (running under login user, need to try not-login-user)
+### verify an image using tag (public key) - complete trace 
 ```
 cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
 ```
