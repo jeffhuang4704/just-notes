@@ -1,16 +1,16 @@
 ## cosign related traffic
 
 ### verify trace (short version)
-- 🏷️ [verify an image using tag `ubuntu:latest` (🔑 public key) - short version](#verify-an-image-using-tag-public-key---short-version)
-- 🏷️ [verify an image using tag `ubuntu:latest` (keyless) - short version](#verify-an-image-using-tag-keyless---short-version)
-- 🔢 [verify an image using digest `ubuntu@sha256:4c1c..` (🔑 public key) - short version](#verify-an-image-using-digest-public-key---short-version)
-- 🔢 [verify an image using digest `ubuntu@sha256:4c1c..` (keyless) - short version](#verify-an-image-using-digest-keyless---short-version)
+- 🏷️ [verify an image using tag `ubuntu:latest` (🔑 public key)](#verify-an-image-using-tag-public-key---short-version)
+- 🏷️ [verify an image using tag `ubuntu:latest` (keyless)](#verify-an-image-using-tag-keyless---short-version)
+- 🔢 [verify an image using digest `ubuntu@sha256:4c1c..` (🔑 public key)](#verify-an-image-using-digest-public-key---short-version)
+- 🔢 [verify an image using digest `ubuntu@sha256:4c1c..` (keyless)](#verify-an-image-using-digest-keyless---short-version)
 
 ### verify trace (complete version)
-- 🏷️ [verify an image using tag `ubuntu:latest` (🔑 public key) - complete trace](#verify-an-image-using-tag-public-key---complete-trace)
-- 🏷️ [verify an image using tag `ubuntu:latest` (keyless) - complete trace](#verify-an-image-using-tag-keyless---complete-trace)
-- 🔢 [verify an image using digest `ubuntu@sha256:4c1c..` (🔑 public key) - complete version](#verify-an-image-using-digest-public-key---complete-version)
-- 🔢 [verify an image using digest `ubuntu@sha256:4c1c..` (keyless) - complete version](#verify-an-image-using-digest-keyless---complete-version)
+- 🏷️ [verify an image using tag `ubuntu:latest` (🔑 public key)](#verify-an-image-using-tag-public-key---complete-trace)
+- 🏷️ [verify an image using tag `ubuntu:latest` (keyless)](#verify-an-image-using-tag-keyless---complete-trace)
+- 🔢 [verify an image using digest `ubuntu@sha256:4c1c..` (🔑 public key)](#verify-an-image-using-digest-public-key---complete-version)
+- 🔢 [verify an image using digest `ubuntu@sha256:4c1c..` (keyless)](#verify-an-image-using-digest-keyless---complete-version)
 
 ### sign trace
 - [sign an image - keypair](#sign-an-image---keypair)
