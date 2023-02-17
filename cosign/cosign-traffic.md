@@ -2,7 +2,7 @@
 
 ### verify an image using tag (public key)
 ```
-cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
+0️⃣ cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
 ```
 
 ```
