@@ -52,9 +52,9 @@ cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
 
 
 ```
-👉 neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign verify --key cosign.pub chihjenhuang/cosign
-1:t1 -d
-2023/02/17 09:41:00 --> GET https://index.docker.io/v2/
+0️⃣ neuvector@ubuntu2204d:~/play_sigstore/0217$ cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
+
+1️⃣ 2023/02/17 09:41:00 --> GET https://index.docker.io/v2/
 2023/02/17 09:41:00 GET /v2/ HTTP/1.1
 Host: index.docker.io
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
@@ -72,7 +72,7 @@ Www-Authenticate: Bearer realm="https://auth.docker.io/token",service="registry.
 
 {"errors":[{"code":"UNAUTHORIZED","message":"authentication required","detail":null}]}
 
-2023/02/17 09:41:00 --> GET https://auth.docker.io/token?scope=repository%3Achihjenhuang%2Fcosign1%3Apull&service=registry.docker.io [body redacted: basic token response contains credentials]
+2️⃣ 2023/02/17 09:41:00 --> GET https://auth.docker.io/token?scope=repository%3Achihjenhuang%2Fcosign1%3Apull&service=registry.docker.io [body redacted: basic token response contains credentials]
 2023/02/17 09:41:00 GET /token?scope=repository%3Achihjenhuang%2Fcosign1%3Apull&service=registry.docker.io HTTP/1.1
 Host: auth.docker.io
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
@@ -89,7 +89,7 @@ Strict-Transport-Security: max-age=31536000
 X-Trace-Id: f0ead641983cd230e1b2ccb1c492f3a2
 
 
-🔑🔑🔑 2023/02/17 09:41:00 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/t1
+3️⃣ 2023/02/17 09:41:00 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/t1
 2023/02/17 09:41:00 GET /v2/chihjenhuang/cosign1/manifests/t1 HTTP/1.1
 Host: index.docker.io
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
@@ -152,7 +152,7 @@ Strict-Transport-Security: max-age=31536000
       }
    ]
 }
-2023/02/17 09:41:00 --> GET https://index.docker.io/v2/
+4️⃣ 2023/02/17 09:41:00 --> GET https://index.docker.io/v2/
 2023/02/17 09:41:00 GET /v2/ HTTP/1.1
 Host: index.docker.io
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
@@ -170,7 +170,7 @@ Www-Authenticate: Bearer realm="https://auth.docker.io/token",service="registry.
 
 {"errors":[{"code":"UNAUTHORIZED","message":"authentication required","detail":null}]}
 
-2023/02/17 09:41:01 --> GET https://auth.docker.io/token?scope=repository%3Achihjenhuang%2Fcosign1%3Apull&service=registry.docker.io [body redacted: basic token response contains credentials]
+5️⃣ 2023/02/17 09:41:01 --> GET https://auth.docker.io/token?scope=repository%3Achihjenhuang%2Fcosign1%3Apull&service=registry.docker.io [body redacted: basic token response contains credentials]
 2023/02/17 09:41:01 GET /token?scope=repository%3Achihjenhuang%2Fcosign1%3Apull&service=registry.docker.io HTTP/1.1
 Host: auth.docker.io
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
@@ -187,7 +187,7 @@ Strict-Transport-Security: max-age=31536000
 X-Trace-Id: 03ccf6af66d12f2548bedeaf6ccdb9bf
 
 
-👉 2023/02/17 09:41:01 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/sha256-4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d.sig
+6️⃣ 2023/02/17 09:41:01 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/sha256-4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d.sig
 2023/02/17 09:41:01 GET /v2/chihjenhuang/cosign1/manifests/sha256-4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d.sig HTTP/1.1
 Host: index.docker.io
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
@@ -210,7 +210,7 @@ Ratelimit-Remaining: 197;w=21600
 Strict-Transport-Security: max-age=31536000
 
 {"schemaVersion":2,"mediaType":"application/vnd.oci.image.manifest.v1+json","config":{"mediaType":"application/vnd.oci.image.config.v1+json","size":247,"digest":"sha256:85ad8e17d3d7c00664855c638832bd99f32d42542c2d587851410a45a7f60b95"},"layers":[{"mediaType":"application/vnd.dev.cosign.simplesigning.v1+json","size":252,"digest":"sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc","annotations":{"dev.cosignproject.cosign/signature":"MEYCIQCPH7NJAIfrB6BZN91dV0o7l/i11muXrvrAh100jDMMhAIhAPsLH0oXb2OPITXRpWBMUd3vHtz5Ks5pql2Hr6t/IJXw"}}]}
-2023/02/17 09:41:41 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc [body redacted: omitting binary blobs from logs]
+7️⃣ 2023/02/17 09:41:41 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc [body redacted: omitting binary blobs from logs]
 2023/02/17 09:41:41 GET /v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc HTTP/1.1
 Host: index.docker.io
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
@@ -228,8 +228,7 @@ Strict-Transport-Security: max-age=31536000
 Content-Length: 0
 
 
-2023/02/17 09:41:01 --> GET https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676658661-iL8RZAoYgcwML%2FjTAwv5bNKth4E%3D [body redacted: omitting binary blobs from logs]
-2023/02/17 09:41:01 GET /registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676658661-iL8RZAoYgcwML%2FjTAwv5bNKth4E%3D HTTP/1.1
+8️⃣ 2023/02/17 09:41:01 GET /registry-v2/docker/registry/v2/blobs/sha256/b6/b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc/data?verify=1676658661-iL8RZAoYgcwML%2FjTAwv5bNKth4E%3D HTTP/1.1
 Host: production.cloudflare.docker.com
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
 Referer: https://index.docker.io/v2/chihjenhuang/cosign1/blobs/sha256:b671489ededd1a180bd87235bba00fd83354f9c7d13b71d9f8b66a8e52965ebc
