@@ -1,21 +1,21 @@
 ## cosign related traffic
 
 ### verify trace (short version)
-- 🏷️ [verify an image using tag (public key) - short version](#verify-an-image-using-tag-public-key---short-version)
+- 🏷️ [verify an image using tag (🔑 public key) - short version](#verify-an-image-using-tag-public-key---short-version)
 - 🏷️ [verify an image using tag (keyless) - short version](#verify-an-image-using-tag-keyless---short-version)
-- 🔢 [verify an image using digest (public key) - short version](#verify-an-image-using-digest-public-key---short-version)
+- 🔢 [verify an image using digest (🔑 public key) - short version](#verify-an-image-using-digest-public-key---short-version)
 - 🔢 [verify an image using digest (keyless) - short version](#verify-an-image-using-digest-keyless---short-version)
 
 ### verify trace (complete version)
-- 🏷️ [verify an image using tag (public key) - complete trace](#verify-an-image-using-tag-public-key---complete-trace)
+- 🏷️ [verify an image using tag (🔑 public key) - complete trace](#verify-an-image-using-tag-public-key---complete-trace)
 - 🏷️ [verify an image using tag (keyless) - complete trace](#verify-an-image-using-tag-keyless---complete-trace)
-- 🔢 [verify an image using digest (public key) - complete version](#verify-an-image-using-digest-public-key---complete-version)
+- 🔢 [verify an image using digest (🔑 public key) - complete version](#verify-an-image-using-digest-public-key---complete-version)
 - 🔢 [verify an image using digest (keyless) - complete version](#verify-an-image-using-digest-keyless---complete-version)
 
 ### sign trace
 - [sign an image - keypair](#sign-an-image---keypair)
 
-### verify an image using tag (public key) - short version 
+### verify an image using tag (🔑 public key) - short version 
 ```
 cosign verify --key cosign.pub chihjenhuang/cosign1:t1 -d
 ```
