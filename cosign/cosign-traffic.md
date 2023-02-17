@@ -1,12 +1,12 @@
 ## cosign related traffic
 
-- verify an image using tag (public key) - short version
-- verify an image using tag (keyless) - short version
+- [verify an image using tag (public key) - short version](#verify-an-image-using-tag-public-key---short-version)
+- [verify an image using tag (keyless) - short version]()
 
-- verify an image using tag (public key) - complete trace 
-- verify an image using tag (keyless) - complete trace 
+- [verify an image using tag (public key) - complete trace](#verify-an-image-using-tag-public-key---complete-trace)
+- [verify an image using tag (keyless) - complete trace]()
 
-- sign an image - keypair
+- [sign an image - keypair](#sign-an-image---keypair)
 
 ### verify an image using tag (public key) - short version 
 ```
@@ -52,6 +52,13 @@ The following checks were performed on each of these signatures:
 [{"critical":{"identity":{"docker-reference":"index.docker.io/chihjenhuang/cosign1"},"image":{"docker-manifest-digest":"sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d"},"type":"cosign container image signature"},"optional":null}]
 
 ```
+
+
+### verify an image using tag (keyless) - short version
+```
+TODO
+```
+
 
 ### verify an image using tag (public key) - complete trace 
 ```
@@ -392,6 +399,11 @@ The following checks were performed on each of these signatures:
   - The signatures were verified against the specified public key
 
 [{"critical":{"identity":{"docker-reference":"index.docker.io/chihjenhuang/cosign1"},"image":{"docker-manifest-digest":"sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d"},"type":"cosign container image signature"},"optional":null}]
+```
+
+### verify an image using tag (keyless) - complete trace
+```
+TODO
 ```
 
 ### sign an image - keypair
