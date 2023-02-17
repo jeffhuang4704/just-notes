@@ -1,7 +1,7 @@
 ## cosign related traffic
 
 ### verify trace (short version)
-- 🏷️ [verify an image using tag (🔑 public key) - short version](#verify-an-image-using-tag-public-key---short-version)
+- 🏷️ [verify an image using tag `ubuntu:latest` (🔑 public key) - short version](#verify-an-image-using-tag-public-key---short-version)
 - 🏷️ [verify an image using tag (keyless) - short version](#verify-an-image-using-tag-keyless---short-version)
 - 🔢 [verify an image using digest (🔑 public key) - short version](#verify-an-image-using-digest-public-key---short-version)
 - 🔢 [verify an image using digest (keyless) - short version](#verify-an-image-using-digest-keyless---short-version)
