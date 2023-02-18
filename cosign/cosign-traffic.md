@@ -151,7 +151,7 @@ X-Trace-Id: f0ead641983cd230e1b2ccb1c492f3a2
 
 
 3️⃣ 2023/02/17 09:41:00 --> GET https://index.docker.io/v2/chihjenhuang/cosign1/manifests/t1
-2023/02/17 09:41:00 GET /v2/chihjenhuang/cosign1/manifests/t1 HTTP/1.1
+2023/02/17 09:41:00 GET /v2/👉chihjenhuang/cosign1/👉manifests/t1 HTTP/1.1
 Host: index.docker.io
 User-Agent: cosign/v1.13.1 (linux; amd64) go-containerregistry/v0.11.0
 Accept: application/vnd.docker.distribution.manifest.v1+json,application/vnd.docker.distribution.manifest.v1+prettyjws,application/vnd.docker.distribution.manifest.v2+json,application/vnd.oci.image.manifest.v1+json,application/vnd.docker.distribution.manifest.list.v2+json,application/vnd.oci.image.index.v1+json
@@ -164,7 +164,7 @@ Accept-Encoding: gzip
 Content-Length: 1570
 Content-Type: application/vnd.docker.distribution.manifest.v2+json
 Date: Fri, 17 Feb 2023 17:41:00 GMT
-Docker-Content-Digest: sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d
+👉 Docker-Content-Digest: sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d
 Docker-Distribution-Api-Version: registry/2.0
 Docker-Ratelimit-Source: aa244511-db56-4b1d-9536-8249869527c1
 Etag: "sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d"
@@ -338,7 +338,20 @@ The following checks were performed on each of these signatures:
   - The cosign claims were validated
   - The signatures were verified against the specified public key
 
-[{"critical":{"identity":{"docker-reference":"index.docker.io/chihjenhuang/cosign1"},"image":{"docker-manifest-digest":"sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d"},"type":"cosign container image signature"},"optional":null}]
+[{
+	"critical": {
+		"identity": {
+			"docker-reference": "index.docker.io/chihjenhuang/cosign1"
+		},
+		"image": {
+			👉 "docker-manifest-digest": "sha256:4c1c50d0ffc614f90b93b07d778028dc765548e823f676fb027f61d281ac380d"
+		},
+		"type": "cosign container image signature"
+	},
+	"optional": null
+}]
+
+
 ```
 
 ### verify an image using digest (public key)
