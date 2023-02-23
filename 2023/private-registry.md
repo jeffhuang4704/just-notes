@@ -1,6 +1,6 @@
 ## Private registry 
 
-### to access a private registry as a client
+### to access a private registry(using self-signed tls) as a client
 1. modify /etc/hosts,   
 ```
 10.1.45.50 labk.neuvector.com
