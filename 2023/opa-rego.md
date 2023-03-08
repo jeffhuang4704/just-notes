@@ -47,6 +47,10 @@ neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/nvdig/k8s/pods
 ## using rego policy
    - rego read data
    - rego read input (parameter)
+   - add rego to opa
+   - evaluate rego without input, using `HTTP GET`
+   - evaluate rego with input, using `HTTP POST`
+
 ```
 // prepare json ocument
 neuvector@ubuntu2204d:~/ui_pagination$ cat scan_asset.json | more
