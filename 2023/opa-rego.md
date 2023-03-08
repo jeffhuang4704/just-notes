@@ -44,7 +44,7 @@ neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/nvdig/k8s/pods
 {"result":{"apiVersion":"v1","items":[{"metadata":{"creationTimestamp":"2022-11-09T07:18:
 ```
 
-## write rego policy
+## using rego policy
    - rego read data
    - rego read input (parameter)
 ```
@@ -140,14 +140,3 @@ neuvector@ubuntu2204d:~/opa$ curl -X POST http://localhost:8181/v1/data/playtest
 {"result":["0=op-1","1=op-2","2=op-3"]}
 neuvector@ubuntu2204d:~/opa$
 ```
-
-
-## upload rego policy
-```
-neuvector@ubuntu2204d:~/opa$ cat 2_apply_rego.sh
-curl -X PUT http://localhost:8181/v1/policies/play --data-binary @play1.rego
-```
-
-
-## evaluate rego policy without parameter
-## evaluate rego policy with parameter (input to rego policy)
