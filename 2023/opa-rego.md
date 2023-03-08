@@ -7,19 +7,29 @@ echo "visit opa server at http://10.1.45.43:8181/v1/data"
 opa run --server --ignore=.* --addr=:8181 &
 ```
 
-
-## start opa SSL
+## start opa with TLS
 TODO: add steps to generate the cert
 ```
 // start opa with TLS
 opa run --server --log-level debug --tls-cert-file public.crt --tls-private-key-file private.key --addr=:8181
 ```
 
-
 ## add document to opa and read it back
 
 ```
-curl -X PUT http://localhost:8181/v1/data/nvdig/k8s/pods --data-binary @allpods.json
+// prepare a JSON doc
+neuvector@ubuntu2204d:~/opa$ cat allpods.json | more
+{
+  "kind": "PodList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "1515575"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "coredns-558bd4d5db-42sp2",
+
 
 // after add, we can get the read via 
 neuvector@ubuntu2204d:~/opa$ curl -X PUT http://localhost:8181/v1/data/nvdig/k8s/pods --data-binary @allpods.json
