@@ -82,7 +82,7 @@ test2[msg]{
 
 test3[msg]{
     # record := /v1/data/asset/vulnerabilities
-    record := data.asset.vulnerabilities[i] 👈
+    record := data.asset.vulnerabilities[i] 👈  # data == curl http://localhost:8181/v1/data/asset/vulnerabilities
     msg := sprintf("%v=%v",[i,record.name])
 }
 
@@ -99,7 +99,7 @@ test4[msg]{
 }
 
 images[msg]{
-    record := data.asset.images[i]
+    record := data.asset.images[i]  👈  # data == curl http://localhost:8181/v1/data/asset/images
     msg:=record
 }
 
