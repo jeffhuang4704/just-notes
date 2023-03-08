@@ -123,14 +123,14 @@ neuvector@ubuntu2204d:~/opa$ cat 2_apply_rego.sh
 curl -X PUT http://localhost:8181/v1/policies/play --data-binary @play1.rego
 ```
 
-👉 Evaluate rule, without input parameter => using HTTP GET
+👉 Evaluate rule, without input parameter => using `HTTP GET`
 ```
 // 👉 format for the URL :  /v1/data/{package_name}/{rule_name}
 neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/playtest/test
 {"result":["0=value1","1=value2","2=value3"]}
 ```
 
-👉 Evaluate rule, provide input as parameter => using HTTP POST
+👉 Evaluate rule, provide input as parameter => using `HTTP POST`
 ```
 neuvector@ubuntu2204d:~/opa$ cat query_filter.json
 {
