@@ -64,7 +64,10 @@ neuvector@ubuntu2204d:~/ui_pagination$ curl http://localhost:8181/v1/data/asset
 neuvector@ubuntu2204d:~/ui_pagination$ curl http://localhost:8181/v1/data/asset/images
 ```
 
-A simple rego policy
+A simple rego policy,
+ 👉 to read from data, it's in `data`
+ 👉 to read from user's input, it's in `input`
+
 ```
 neuvector@ubuntu2204d:~/opa$ cat play1.rego
 package playtest
