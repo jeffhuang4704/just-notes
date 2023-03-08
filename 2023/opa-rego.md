@@ -32,7 +32,7 @@ neuvector@ubuntu2204d:~/opa$ cat allpods.json | more
 
 
 // add it via HTTP PUT 
-// 👉 note the /v1/data part is fixed, and the nvdig/k88s/pods is we defined.
+// 👉 note the /v1/data part is fixed, and the nvdig/k8s/pods is we defined.
 neuvector@ubuntu2204d:~/opa$ curl -X PUT http://localhost:8181/v1/data/nvdig/k8s/pods --data-binary @allpods.json
 
 
@@ -126,33 +126,6 @@ neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/playtest/test
 {"result":["0=value1","1=value2","2=value3"]}
 ```
 
-```
-// # access the data 
-// test2[msg]{
-//    onepod := data.nvdig.k8s.pods.items[i]
-//    msg := sprintf("%v",[onepod.metadata.name])
-// }
-
-neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/playtest/test2
-{"result":["coredns-558bd4d5db-42sp2","coredns-558bd4d5db-lv6bk","etcd-ubuntu2204-e","kube-apiserver-ubuntu2204-e",
-```
-
-```
-// # access the data
-
-test3[msg]{
-    # record := /v1/data/asset/vulnerabilities
-    record := data.asset.vulnerabilities[i]
-    msg := sprintf("%v=%v",[i,record.name])
-}
-
-test3a[msg]{
-    record := data.asset.vulnerabilities[i]
-    record.name=="CVE-2019-25013"
-    msg := record
-}
-
-```
 
 ## upload rego policy
 ```
