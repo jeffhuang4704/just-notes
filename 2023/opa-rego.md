@@ -1,4 +1,4 @@
-## OPA and Rego usage
+# OPA and Rego usage
 
 ## start opa
 ```
@@ -147,3 +147,21 @@ neuvector@ubuntu2204d:~/opa$ curl -X POST http://localhost:8181/v1/data/playtest
 {"result":["0=op-1","1=op-2","2=op-3"]}
 neuvector@ubuntu2204d:~/opa$
 ```
+
+## some diagrams
+
+<p align="center">
+<img src="../images/opa-1.png" width="80%">
+</p>
+
+<p align="center">
+<img src="../images/opa-2.png" width="80%">
+</p>
+
+<p align="center">
+<img src="../images/opa-3.png" width="80%">
+</p>
+
+<p align="center">
+<img src="../images/opa-4.png" width="80%">
+</p>
