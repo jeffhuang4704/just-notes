@@ -32,11 +32,14 @@ neuvector@ubuntu2204d:~/opa$ cat allpods.json | more
 
 
 // add it via HTTP PUT 
+// note the /v1/data part is fixed, and the nvdig/k88s/pods is we defined.
 neuvector@ubuntu2204d:~/opa$ curl -X PUT http://localhost:8181/v1/data/nvdig/k8s/pods --data-binary @allpods.json
+
+
+// read it back via HTTP GET
 neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/nvdig/k8s
 {"result":{"pods":{"apiVersion":"v1","items":[{"metadata":{"creationTimestamp":"2022-11-09T07:18:44Z","generateName"
 
-// read it back via HTTP GET
 neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/nvdig/k8s/pods
 {"result":{"apiVersion":"v1","items":[{"metadata":{"creationTimestamp":"2022-11-09T07:18:
 ```
