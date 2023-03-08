@@ -32,7 +32,7 @@ neuvector@ubuntu2204d:~/opa$ cat allpods.json | more
 
 
 // add it via HTTP PUT 
-// note the /v1/data part is fixed, and the nvdig/k88s/pods is we defined.
+// 👉 note the /v1/data part is fixed, and the nvdig/k88s/pods is we defined.
 neuvector@ubuntu2204d:~/opa$ curl -X PUT http://localhost:8181/v1/data/nvdig/k8s/pods --data-binary @allpods.json
 
 
@@ -72,25 +72,25 @@ test[msg]{
 }
 
 test2[msg]{
-    onepod := data.nvdig.k8s.pods.items[i]
+    onepod := data.nvdig.k8s.pods.items[i] 👈
     msg := sprintf("%v",[onepod.metadata.name])
 }
 
 test3[msg]{
     # record := /v1/data/asset/vulnerabilities
-    record := data.asset.vulnerabilities[i]
+    record := data.asset.vulnerabilities[i] 👈
     msg := sprintf("%v=%v",[i,record.name])
 }
 
 test3a[msg]{
     record := data.asset.vulnerabilities[i]
-    record.name=="CVE-2019-25013"
+    record.name=="CVE-2019-25013"   👈
     msg := record
 }
 
 test4[msg]{
         # read from input (via HTT POST)
-        item:=input.filters[i]
+        item:=input.filters[i]      👈  # this comes from user's HTTP POST as input parameter
         msg := sprintf("%v=%v",[i,item])
 }
 
@@ -108,18 +108,18 @@ findImageById[msg]{
 
 findHighRiskVulnerabilities[msg]{
     record := data.asset.vulnerabilities[i]
-    record.score_v3 > 9.0
+    record.score_v3 > 9.0          👈  do filtering based on user's input parameter...
     msg := sprintf("%v=%v, score_v3=%v",[i,record.name, record.score_v3])
 }
 ```
 
-Add policy to opa, note the `/v1/policies` URL
+Add policy to opa, 👉 note the `/v1/policies` URL
 ```
 neuvector@ubuntu2204d:~/opa$ cat 2_apply_rego.sh
 curl -X PUT http://localhost:8181/v1/policies/play --data-binary @play1.rego
 ```
 
-Evaluate rule, without input parameter => using HTTP GET
+👉 Evaluate rule, without input parameter => using HTTP GET
 ```
 // format for the URL :  /v1/data/{package_name}/{rule_name}
 neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/playtest/test
