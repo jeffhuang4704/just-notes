@@ -121,9 +121,24 @@ curl -X PUT http://localhost:8181/v1/policies/play --data-binary @play1.rego
 
 👉 Evaluate rule, without input parameter => using HTTP GET
 ```
-// format for the URL :  /v1/data/{package_name}/{rule_name}
+// 👉 format for the URL :  /v1/data/{package_name}/{rule_name}
 neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/playtest/test
 {"result":["0=value1","1=value2","2=value3"]}
+```
+
+👉 Evaluate rule, provide input as parameter => using HTTP POST
+```
+neuvector@ubuntu2204d:~/opa$ cat query_filter.json
+{
+        "input": {
+                "filters": ["op-1", "op-2", "op-3"],
+                "image_id": "c905cfac2f217dc7bcf9a4aeda3f167857396199eb538c7e9309dcb09f211b7c"
+        }
+}
+
+neuvector@ubuntu2204d:~/opa$ curl -X POST http://localhost:8181/v1/data/playtest/test4 --data-binary @query_filter.json
+{"result":["0=op-1","1=op-2","2=op-3"]}
+neuvector@ubuntu2204d:~/opa$
 ```
 
 
