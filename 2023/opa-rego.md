@@ -31,11 +31,12 @@ neuvector@ubuntu2204d:~/opa$ cat allpods.json | more
         "name": "coredns-558bd4d5db-42sp2",
 
 
-// after add, we can get the read via 
+// add it via HTTP PUT 
 neuvector@ubuntu2204d:~/opa$ curl -X PUT http://localhost:8181/v1/data/nvdig/k8s/pods --data-binary @allpods.json
 neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/nvdig/k8s
 {"result":{"pods":{"apiVersion":"v1","items":[{"metadata":{"creationTimestamp":"2022-11-09T07:18:44Z","generateName"
 
+// read it back via HTTP GET
 neuvector@ubuntu2204d:~/opa$ curl http://localhost:8181/v1/data/nvdig/k8s/pods
 {"result":{"apiVersion":"v1","items":[{"metadata":{"creationTimestamp":"2022-11-09T07:18:
 ```
