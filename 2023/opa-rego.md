@@ -153,14 +153,17 @@ neuvector@ubuntu2204d:~/opa$
 <p align="center">
 <img src="../images/opa-1.png" width="80%">
 </p>
+---
 
-<p align="center" style="margin-top:3rem">
+<p align="center">
 <img src="../images/opa-2.png" width="80%">
 </p>
+---
 
 <p align="center">
 <img src="../images/opa-3.png" width="80%">
 </p>
+---
 
 <p align="center">
 <img src="../images/opa-4.png" width="80%">
