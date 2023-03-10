@@ -15,6 +15,7 @@
 👉 NeuVector related, enable debug, disable enforcer, use PVC to store config, et
 
 ## 2023
+- [delve debugging, remote debug in k8s](./2023/delve-debugging.md)   
 - [observe cosign traffic](./2023/cosign-traffic.md)
 - [nice golang resources](./2023/golang-part1.md)
 - [how to use minikube, install neuvector and debug](./2023/minikube-howto.md)
