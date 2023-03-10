@@ -1,5 +1,17 @@
 # just-notes
 
+## TODO
+👉 delve debug related   
+👉 opa/rego related   
+👉 cosign/sigstore related   
+👉 OpenTelemetry   
+👉 ssh tunnel to access remote NAT behind service  
+👉 consul usage     
+👉 jq cheatsheet   
+👉 vim cheatsheet   
+👉 saml/oidc related, setup keycloak and usage   
+👉 ldap related   
+
 ## 2023
 - [observe cosign traffic](./2023/cosign-traffic.md)
 - [nice golang resources](./2023/golang-part1.md)
