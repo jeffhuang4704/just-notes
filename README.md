@@ -12,11 +12,13 @@
 👉 GCP usage (how to start a VM, etc)   
 👉 saml/oidc related, setup keycloak and usage   
 👉 ldap related   
-👉 NeuVector related, enable debug, disable enforcer, use PVC to store config, et
+👉 NeuVector related,  
+- enable debug, disable enforcer, use PVC to store config, et  
+- restore from backup..  
 
 ## 2023
 - [NeuVector Onboarding and Best Practices Guide](./documents/_GOOD_NV_Onboarding_5.0.pdf)   
-- [delve debugging, remote debug in k8s](./2023/delve-debugging.md)   
+- [Delve debugging, remote debug in k8s](./2023/delve-debugging.md)   
 - [observe cosign traffic](./2023/cosign-traffic.md)
 - [nice golang resources](./2023/golang-part1.md)
 - [how to use minikube, install neuvector and debug](./2023/minikube-howto.md)
