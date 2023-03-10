@@ -8,9 +8,11 @@
 👉 ssh tunnel to access remote NAT behind service  
 👉 consul usage     
 👉 jq cheatsheet   
-👉 vim cheatsheet   
+👉 vim cheatsheet 
+👉 GCP usage (how to start a VM, etc)   
 👉 saml/oidc related, setup keycloak and usage   
 👉 ldap related   
+👉 NeuVector related, enable debug, disable enforcer, use PVC to store config, et
 
 ## 2023
 - [observe cosign traffic](./2023/cosign-traffic.md)
