@@ -19,19 +19,23 @@
 - Misc
     - [Install NeuVector steps, start from scratch]
         - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#*%20K8s%20installation&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={4199C511-0482-4B87-A93D-6DD3BC4F143F}&end`
-    - [k8s user and permissions](onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#RBAC%20-%20User%20%20Permissions&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={82499009-2B87-4C45-89A7-815E06FA123F}&end)
+    - [k8s user and permissions]
+        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#RBAC%20-%20User%20%20Permissions&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={82499009-2B87-4C45-89A7-815E06FA123F}&end`
     - [Create a Kubernetes TLS Ingress from scratch in Minikube](https://www.youtube.com/watch?v=7K0gAYmWWho&ab_channel=kubucation)
-        - [Notes](onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={2FF45C4A-DABC-44B5-B759-E11625C64FCD}&23)
-    - [Purchased domain, gotalentpool.com, try to apply in my env](onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={7E7F2D08-1FB9-4C77-984F-2C3ADB680E07}&DB)
+        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={2FF45C4A-DABC-44B5-B759-E11625C64FCD}&23`
+    - [Purchased domain, gotalentpool.com, try to apply in my env]
+        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={7E7F2D08-1FB9-4C77-984F-2C3ADB680E07}&DB`
     - How to generate certificate, so it can be used in testing web server, or admission control,,, check the book "Microservices Security in Action", the appendix G
 - Rancher
     - how to install
-    - [Run Rancher in a docker](onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-2&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={F75B72AC-6A3C-414D-8D0D-CB04851BC87F}&object-id={D55210C5-2B86-4A41-A6D5-E81C52942D54}&C)
+    - [Run Rancher in a docker]
+        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-2&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={F75B72AC-6A3C-414D-8D0D-CB04851BC87F}&object-id={D55210C5-2B86-4A41-A6D5-E81C52942D54}&C`
     - install NeuVector and integrate with Rancher
     - there is a book related to Rancher
 - NeuVector related,  
     - install manually with backup restore..
-        - check this [How to restore, OneNote Work > Notes01](onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#Debug%20Controller%20(1)&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={65EA81B0-687C-4BB6-8710-AD46241F20B9}&end)
+        - check this [How to restore, OneNote Work > Notes01]
+            - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#Debug%20Controller%20(1)&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={65EA81B0-687C-4BB6-8710-AD46241F20B9}&end`
     - install by helm
     - enable debug, disable enforcer, use PVC to store config, et  
     - how to debug controller
