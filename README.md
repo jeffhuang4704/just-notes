@@ -23,7 +23,7 @@
 - [k8s admission control debugging](./2023/k8s-admission-control-debug.md)
 - [SSH Tunnel, connect to host behind NAT](./2023/ssh-tunnel.md)   
 - [NeuVector Onboarding and Best Practices Guide](./documents/_GOOD_NV_Onboarding_5.0.pdf)   
-- [Delve debugging, remote debug in k8s](./2023/delve-debugging.md)   
+- Delve [Delve debugging, remote debug in k8s](./2023/delve-debugging.md)   
 - [observe cosign traffic](./2023/cosign-traffic.md)
 - [nice golang resources](./2023/golang-part1.md)
 - [how to use minikube, install neuvector and debug](./2023/minikube-howto.md)
