@@ -1,9 +1,15 @@
 # just-notes
 
+## To study
+
+- audiobook - the 5-minute interview
+- audiobook - how the future works
+- oreilly video - complete git guide  (by Bogdan), Packt publishing
+- oreilly video - jq command tutorials
+
 ## TODO
 👉 🆗 delve debug related   
 👉 🆗 opa/rego related   
-👉 cosign/sigstore related   
 👉 OpenTelemetry   
 👉 🆗 ssh tunnel to access remote NAT behind service  
 👉 consul usage     
@@ -12,11 +18,28 @@
 👉 GCP usage (how to start a VM, etc)   
 👉 saml/oidc related, setup keycloak and usage   
 👉 ldap related   
-👉 tools usage `cosign`, `crane`   
-👉 container tool `cdebug`  
+👉 GitHub action  
+- tools usage 
+    - `cosign`, `crane`  
+    - `podman`, there is a book called `Podman for DevOps` 
+    - container tool `cdebug`  
 👉 how to mirror registry?   
 👉 k8s cert manager
+- cosign/sigstore related  
+    - use GitHub Action to sign the image... I have done something..
+- admission controller, and I have develoepd a sample program with webui,, seems in the tools project.
+    - some notes (part 1).. `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#Admission%20Webhook&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={D237EEAA-0F32-42B9-B895-E19E89C17E5C}&end`
+    - some notes (part 2).. `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#Webhook%20steps&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={311709A4-3EA4-4ED2-AA92-E9FF1E419EBA}&end`
+    - notes part 3 `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work2\Notes-01.one#Admission%20Control%20(1)&section-id={52646D5D-AE0F-4403-A1FE-FB6BA9C4E501}&page-id={821A322D-D18D-4AB7-B7A7-236A0326917E}&end`
+    - [How to build a Kubernetes Webhook | Admission controllers](https://www.youtube.com/watch?v=1mNYSn2KMZk&ab_channel=ThatDevOpsGuy)
+    - [derived from previous item, my sample,,, in the tools repo - C:\MyProjects\tools\admissioncontrollers-opa-server-v3a]
+    - [article](https://github.com/elithrar/admission-control#configuring-a-server)
+    - [example](https://docs.giantswarm.io/advanced/custom-admission-controller/)
+    - [TLS certificate notes for Webhook](https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/kubernetes/admissioncontrollers/introduction/README.md)
+
 - Misc
+    - [CFSSL CloudFlare's PKI/TLS toolkit](https://github.com/cloudflare/cfssl)
+        - [Use CFSSL to generate certificates](https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/kubernetes/admissioncontrollers/introduction/tls/ssl_generate_self_signed.md)
     - [Install NeuVector steps, start from scratch]
         - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#*%20K8s%20installation&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={4199C511-0482-4B87-A93D-6DD3BC4F143F}&end`
     - [k8s user and permissions]
@@ -26,6 +49,9 @@
     - [Purchased domain, gotalentpool.com, try to apply in my env]
         - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={7E7F2D08-1FB9-4C77-984F-2C3ADB680E07}&DB`
     - How to generate certificate, so it can be used in testing web server, or admission control,,, check the book "Microservices Security in Action", the appendix G
+    - [很好的練習, use simple scripts to call k8s apis]
+        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-05%20Part%20-5&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={6C311090-AC10-4EF5-A4A0-A2E7350723FF}&object-id={4786CD3D-0FF2-477B-92F3-078EEE5381CF}&B`
+    - [generate cert in Makefile](https://github.com/kubernetes/pod-security-admission/tree/master/webhook)
 - Rancher
     - how to install
     - [Run Rancher in a docker]
@@ -51,6 +77,9 @@
     - federation
         - how to setup
         - how it works
+        - notes - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work2\Notes-01.one#Federation,%20KV%20Store%20Sync&section-id={52646D5D-AE0F-4403-A1FE-FB6BA9C4E501}&page-id={26B3B10C-CE3E-4EE9-9990-5DF51FFF525E}&end`
+- OPA
+    - OPA print function (nice debug mechanism) `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-02.one#2022-07%20Part%20-2&section-id={955E51B5-E20C-4DED-8FB6-5D34F6115376}&page-id={B3BA7FF6-79B0-473C-95EA-4576EF17F33B}&object-id={9A28311D-C346-4431-A976-D09ED4D85875}&B`
     
 
 ## 2023
