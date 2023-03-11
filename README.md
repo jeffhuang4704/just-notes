@@ -17,7 +17,8 @@
 👉 how to mirror registry?   
 👉 k8s cert manager
 - Misc
-    - [Install NeuVector steps, start from scratch](onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#*%20K8s%20installation&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={4199C511-0482-4B87-A93D-6DD3BC4F143F}&end)
+    - [Install NeuVector steps, start from scratch]
+        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#*%20K8s%20installation&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={4199C511-0482-4B87-A93D-6DD3BC4F143F}&end`
     - [k8s user and permissions](onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#RBAC%20-%20User%20%20Permissions&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={82499009-2B87-4C45-89A7-815E06FA123F}&end)
     - [Create a Kubernetes TLS Ingress from scratch in Minikube](https://www.youtube.com/watch?v=7K0gAYmWWho&ab_channel=kubucation)
         - [Notes](onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={2FF45C4A-DABC-44B5-B759-E11625C64FCD}&23)
