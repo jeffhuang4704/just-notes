@@ -31,5 +31,5 @@
     detect deadlock
 ```
 
-[Profiling and Execution Tracing in Go](https://teivah.medium.com/profiling-and-execution-tracing-in-go-a5e646970f5b)
+[Profiling and Execution Tracing in Go](https://teivah.medium.com/profiling-and-execution-tracing-in-go-a5e646970f5b)   
 [gRPC YouTube video series](https://www.youtube.com/playlist?list=PLmD8u-IFdreyyTx93jJ5GkijwDXFqyr3T)
