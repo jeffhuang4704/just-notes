@@ -1,22 +1,26 @@
 # just-notes
 
 ## TODO
-👉 delve debug related   
-👉 opa/rego related   
+👉 🆗 delve debug related   
+👉 🆗 opa/rego related   
 👉 cosign/sigstore related   
 👉 OpenTelemetry   
-👉 ssh tunnel to access remote NAT behind service  
+👉 🆗 ssh tunnel to access remote NAT behind service  
 👉 consul usage     
 👉 jq cheatsheet   
 👉 vim cheatsheet   
 👉 GCP usage (how to start a VM, etc)   
 👉 saml/oidc related, setup keycloak and usage   
 👉 ldap related   
+👉 tools usage `cosign`, `crane`   
+👉 container tool `cdebug`  
+👉 how to mirror registry?   
 👉 NeuVector related,  
 - enable debug, disable enforcer, use PVC to store config, et  
 - restore from backup..  
 
 ## 2023
+- [SSH Tunnel, connect to host behind NAT](./2023/ssh-tunnel.md)   
 - [NeuVector Onboarding and Best Practices Guide](./documents/_GOOD_NV_Onboarding_5.0.pdf)   
 - [Delve debugging, remote debug in k8s](./2023/delve-debugging.md)   
 - [observe cosign traffic](./2023/cosign-traffic.md)
