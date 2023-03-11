@@ -24,6 +24,7 @@
 - [SSH Tunnel, connect to host behind NAT](./2023/ssh-tunnel.md)   
 - [NeuVector Onboarding and Best Practices Guide](./documents/_GOOD_NV_Onboarding_5.0.pdf)   
 - Delve [Delve tips](./2023/delve-debugging.md)   
+    - debug flags 
     - remove `-trimpath` when debug open source project
     - pass parameter to CLI
     - debug program running in k8s container

@@ -1,7 +1,17 @@
 # Delve debugging
 
-## Tip 1 - remember to remove -trimpath flag
-When build the program for dlv debugging, besides adding the `-gcflags`, we need to remove the `-trimpath` option , otherwise the dlv cannot find the path...   
+## Tip 1 - debug build flags
+
+- Need to use debug flags
+```
+neuvector@labubt18srv1:~/go/src/github.com/neuvector/neuvector/controller$ cat Makefile
+all:
+        # go build --ldflags '-extldflags "-static"'
+        # go build -ldflags='-s -w'     # release build
+        go build -gcflags=all="-N -l"   # debug build
+```
+
+- When build the program for dlv debugging, besides adding the `-gcflags`, we need to remove the `-trimpath` option , otherwise the dlv cannot find the path...   
 Some open source project will include this.
 
 <p align="center">
