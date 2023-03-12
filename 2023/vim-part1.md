@@ -6,5 +6,5 @@
 ## My notes
 
 <p align="center">
-<img src="../images/vim-1.png" width="80%">
+<img src="../images/vim-1.png" width="95%">
 </p>
