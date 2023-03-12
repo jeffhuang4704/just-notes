@@ -26,8 +26,6 @@
 | git diff | Show file differences that haven't been staged |
 
 ## TODO
-👉 🆗 delve debug related   
-👉 🆗 opa/rego related   
 👉 OpenTelemetry   
 👉 🆗 ssh tunnel to access remote NAT behind service  
 👉 consul usage     
@@ -97,7 +95,7 @@
 - [Run Rancher in a docker]
     - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-2&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={F75B72AC-6A3C-414D-8D0D-CB04851BC87F}&object-id={D55210C5-2B86-4A41-A6D5-E81C52942D54}&C`
 - install NeuVector and integrate with Rancher
-- there is a book related to Rancher
+- there is a book related to `Rancher Deep Dive`
 
 ## Tools
 - `cosign`, `crane`  
@@ -123,10 +121,6 @@
 - [opa rego](./2023/opa-rego.md)
 - [opa rego, sort arry object by key](./2023/opa-rego-sort-by-array-object.md)
 - OPA print function (nice debug mechanism) `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-02.one#2022-07%20Part%20-2&section-id={955E51B5-E20C-4DED-8FB6-5D34F6115376}&page-id={B3BA7FF6-79B0-473C-95EA-4576EF17F33B}&object-id={9A28311D-C346-4431-A976-D09ED4D85875}&B`
-
-## 2023
-- [SSH Tunnel, connect to host behind NAT](./2023/ssh-tunnel.md)   
-- [private registry usage](./2023/private-registry.md)
 
 ## NeuVector
 - [NeuVector Onboarding and Best Practices Guide](./documents/_GOOD_NV_Onboarding_5.0.pdf)   
@@ -176,3 +170,6 @@
 - C# ADO.NET sample code
 - C# dependency injection in console program
 
+## Misc.
+- [SSH Tunnel, connect to host behind NAT](./2023/ssh-tunnel.md)   
+- [private registry usage](./2023/private-registry.md)
