@@ -26,24 +26,16 @@
 | git diff | Show file differences that haven't been staged |
 
 ## TODO
-👉 OpenTelemetry   
-👉 🆗 ssh tunnel to access remote NAT behind service  
 👉 consul usage     
 👉 jq cheatsheet   
-👉 vim cheatsheet   
 👉 GCP usage (how to start a VM, etc)   
-👉 saml/oidc related, setup keycloak and usage   
 👉 ldap related   
 👉 GitHub action  
 👉 how to mirror registry?    
 👉 k8s cert manager   
-- Misc
-    - [CFSSL CloudFlare's PKI/TLS toolkit](https://github.com/cloudflare/cfssl)
-        - [Use CFSSL to generate certificates](https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/kubernetes/admissioncontrollers/introduction/tls/ssl_generate_self_signed.md)
-    - [Purchased domain, gotalentpool.com, try to apply in my env]
-        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={7E7F2D08-1FB9-4C77-984F-2C3ADB680E07}&DB`
-    - How to generate certificate, so it can be used in testing web server, or admission control,,, check the book "Microservices Security in Action", the appendix G
-    - [generate cert in Makefile](https://github.com/kubernetes/pod-security-admission/tree/master/webhook)
+
+## OpenTelemetry
+- notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#OpenTelemetry&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={77BF0BDB-0FD3-4DBB-9001-A70BB7615D3C}&end3`
 
 ## Container
 - [YouTube - Containers series](https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz)
@@ -82,13 +74,11 @@
 
 ## CKA
 - Notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#CKA&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={F29858C3-B14B-4CE1-A144-E4A20AC27542}&end`
+- list the tech nana's course...
 
 ## SAML/OIDC
 - notes 1(keycloak) - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#2022-12%20Part%20-6%20(keycloak,%20oidc)&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={B204B466-8DB7-4BFE-A5BB-D67DBDA9A2E8}&end`
 - notes 2 (keycloak, okta) - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\SAML_OIDC.one#Keycloak,%20okta%20config%20-%202022/12/28%20issue&section-id={EA6E4285-15ED-4D36-9E4B-A02E0D83C157}&page-id={6142F371-4F96-4DE8-9605-AC5F32C82943}&end`
-
-## React
-- [React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
 
 ## Rancher
 - how to install
@@ -127,26 +117,26 @@
 - [how to use minikube, install neuvector and debug](./2023/minikube-howto.md)
 - [Install NeuVector steps, start from scratch]
     - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#*%20K8s%20installation&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={4199C511-0482-4B87-A93D-6DD3BC4F143F}&end`
-- NeuVector related,  
-    - install manually with backup restore..
-        - check this [How to restore, OneNote Work > Notes01]
-            - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#Debug%20Controller%20(1)&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={65EA81B0-687C-4BB6-8710-AD46241F20B9}&end`
-    - install by helm
-    - enable debug, disable enforcer, use PVC to store config, et  
-    - how to debug controller
-        - view log
-        - copy private build into controller and replace it
-            - add environment variables..
-        - add `nodePort` service for controller so we can call rest directly easier
-    - how to do private build of controller container image and publish to docker
-    - restore from backup..  
-    - build script   
-    - grpc build script   
-    - when add a new grpc, what's the step
-    - federation
-        - how to setup
-        - how it works
-        - notes - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work2\Notes-01.one#Federation,%20KV%20Store%20Sync&section-id={52646D5D-AE0F-4403-A1FE-FB6BA9C4E501}&page-id={26B3B10C-CE3E-4EE9-9990-5DF51FFF525E}&end`
+- install manually with backup restore..
+    - check this [How to restore, OneNote Work > Notes01]
+        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#Debug%20Controller%20(1)&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={65EA81B0-687C-4BB6-8710-AD46241F20B9}&end`
+- install by helm
+- enable debug, disable enforcer, use PVC to store config, et  
+- how to debug controller
+    - view log
+    - copy private build into controller and replace it
+        - add environment variables..
+    - add `nodePort` service for controller so we can call rest directly easier
+- how to do private build of controller container image and publish to docker
+- restore from backup..  
+- build script   
+- grpc build script   
+- when add a new grpc, what's the step
+- federation
+    - how to setup
+    - how it works
+    - notes - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work2\Notes-01.one#Federation,%20KV%20Store%20Sync&section-id={52646D5D-AE0F-4403-A1FE-FB6BA9C4E501}&page-id={26B3B10C-CE3E-4EE9-9990-5DF51FFF525E}&end`
+- Python CLI - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#Python%20CLI&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={078BFE7D-2195-49E4-A97E-5F8AA1F29DBF}&end`
 
 ## Golang
 - [nice golang resources](./2023/golang-part1.md)
@@ -170,6 +160,19 @@
 - C# ADO.NET sample code
 - C# dependency injection in console program
 
+## React
+- [React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
+
+## CSS
+- list the course I bought from Kevin
+
 ## Misc.
+- [Vim](./2023/vim-part1.md)
 - [SSH Tunnel, connect to host behind NAT](./2023/ssh-tunnel.md)   
 - [private registry usage](./2023/private-registry.md)
+- [CFSSL CloudFlare's PKI/TLS toolkit](https://github.com/cloudflare/cfssl)
+    - [Use CFSSL to generate certificates](https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/kubernetes/admissioncontrollers/introduction/tls/ssl_generate_self_signed.md)
+- [Purchased domain, gotalentpool.com, try to apply in my env]
+    - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={7E7F2D08-1FB9-4C77-984F-2C3ADB680E07}&DB`
+- How to generate certificate, so it can be used in testing web server, or admission control,,, check the book "Microservices Security in Action", the appendix G
+- [generate cert in Makefile](https://github.com/kubernetes/pod-security-admission/tree/master/webhook)
