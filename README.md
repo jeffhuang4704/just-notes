@@ -19,6 +19,12 @@
     - [Cgroups, namespaces, and beyond: what are containers made from?](https://www.youtube.com/watch?v=sK5i-N34im8&t=148s&ab_channel=Docker)
     - [This Is How Docker Works, The Fun Way!](https://www.youtube.com/watch?v=-NzfOhSAZpA&ab_channel=CodingTech)
 
+## try to use table
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
 ## TODO
 👉 🆗 delve debug related   
 👉 🆗 opa/rego related   
@@ -36,28 +42,27 @@
 - Misc
     - [CFSSL CloudFlare's PKI/TLS toolkit](https://github.com/cloudflare/cfssl)
         - [Use CFSSL to generate certificates](https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/kubernetes/admissioncontrollers/introduction/tls/ssl_generate_self_signed.md)
-    - [Install NeuVector steps, start from scratch]
-        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#*%20K8s%20installation&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={4199C511-0482-4B87-A93D-6DD3BC4F143F}&end`
-    - [k8s user and permissions]
-        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#RBAC%20-%20User%20%20Permissions&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={82499009-2B87-4C45-89A7-815E06FA123F}&end`
-    - [Create a Kubernetes TLS Ingress from scratch in Minikube](https://www.youtube.com/watch?v=7K0gAYmWWho&ab_channel=kubucation)
-        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={2FF45C4A-DABC-44B5-B759-E11625C64FCD}&23`
     - [Purchased domain, gotalentpool.com, try to apply in my env]
         - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={7E7F2D08-1FB9-4C77-984F-2C3ADB680E07}&DB`
     - How to generate certificate, so it can be used in testing web server, or admission control,,, check the book "Microservices Security in Action", the appendix G
-    - [很好的練習, use simple scripts to call k8s apis]
-        - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-05%20Part%20-5&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={6C311090-AC10-4EF5-A4A0-A2E7350723FF}&object-id={4786CD3D-0FF2-477B-92F3-078EEE5381CF}&B`
     - [generate cert in Makefile](https://github.com/kubernetes/pod-security-admission/tree/master/webhook)
 
 ## Container
-- [Containers series](https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz)
-- [containerd - a secret hero of the Cloud Native world](https://www.youtube.com/watch?v=3_jUWW2j_TI&ab_channel=CloudNativeIslamabad)
+- [YouTube - Containers series](https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz)
+- [YouTube - containerd - a secret hero of the Cloud Native world](https://www.youtube.com/watch?v=3_jUWW2j_TI&ab_channel=CloudNativeIslamabad)
 
 ## Kubernetes
-- [Deploying Stateful Applications in Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-deploying-stateful-applications/table-of-contents)
-- [Managing Ingress Traffic Patterns for Kubernetes Services](https://app.pluralsight.com/library/courses/managing-ingress-traffic-patterns-kubernetes-services/table-of-contents)
+- [Plusalsight - Deploying Stateful Applications in Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-deploying-stateful-applications/table-of-contents)
+- [Plusalsight -Managing Ingress Traffic Patterns for Kubernetes Services](https://app.pluralsight.com/library/courses/managing-ingress-traffic-patterns-kubernetes-services/table-of-contents)
 - [k8s admission control debugging](./2023/k8s-admission-control-debug.md)
 - [create servcie accont and use in kubeconfig](./2023/serviceaccount-kubeconfig.md)
+- [Create a Kubernetes TLS Ingress from scratch in Minikube](https://www.youtube.com/watch?v=7K0gAYmWWho&ab_channel=kubucation)
+    - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={2FF45C4A-DABC-44B5-B759-E11625C64FCD}&23`
+- [k8s user and permissions]
+    - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#RBAC%20-%20User%20%20Permissions&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={82499009-2B87-4C45-89A7-815E06FA123F}&end`
+- [很好的練習, use simple scripts to call k8s apis]
+    - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-05%20Part%20-5&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={6C311090-AC10-4EF5-A4A0-A2E7350723FF}&object-id={4786CD3D-0FF2-477B-92F3-078EEE5381CF}&B`
+
 
 ## Kubernetes development
 - Admission Control
@@ -71,8 +76,17 @@
     - [TLS certificate notes for Webhook](https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/kubernetes/admissioncontrollers/introduction/README.md)
 - client-go programming
     - [client-go-example by Ivan Velichko](https://github.com/iximiuz/client-go-examples)
+    - notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#client-go%20part%201&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={53CFB322-523F-4576-B81E-6BE3505318B8}&end`
+    - notes 2 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#client-go%20part%202&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={BEE6C30E-C0DB-4615-9722-0AE69784793D}&end`
 - CRD
     - [Check videos from Vivek Singh](https://www.youtube.com/@viveksinghggits)
+    - notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#K8s%20CRD&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={BC4AC015-2F05-46BC-9790-05EBD00A1075}&end`
+
+## CKA
+- Notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#CKA&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={F29858C3-B14B-4CE1-A144-E4A20AC27542}&end`
+
+## SAML/OIDC
+- notes (keycloak) - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#2022-12%20Part%20-6%20(keycloak,%20oidc)&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={B204B466-8DB7-4BFE-A5BB-D67DBDA9A2E8}&end`
 
 ## React
 - [React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
@@ -88,10 +102,20 @@
 - `cosign`, `crane`  
 - `podman`, there is a book called `Podman for DevOps` 
 - container tool `cdebug`  
+- OAuth2c: user-friendly OAuth CLI
 
 ## Sigstore, Cosign
-- use GitHub Action to sign the image... I have done something..
+- [notes on Git Hub Action - cosign keyless sign] - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one# Sigstore/Cosign (5)&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={D43B7EA6-C868-4DB7-A0B6-1E9F2FB168A1}&end`
 - [observe cosign traffic](./2023/cosign-traffic.md)
+- [Some notes, (1)~(6)] - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one# Sigstore/Cosign (6)&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={6EED2473-6D7F-45ED-88E7-2A9B218F2B19}&end`
+- `cosign`
+    - `cosign save`, `cosign tree`
+    - use `delve debugger` to trace, remember to remove `-trimpath` when build the binary
+    - `dlv exec cosign -- --help`
+    - `dlv exec cosign -- triangulate chihjenhuang/cosign1:t1`
+- `crane`
+    - use `delve debugger` to trace, remember to remove `-trimpath` when build the binary
+    - `dlv exec crane -- digest chihjenhuang/cosign1:t1`
 
 ## OPA/Rego
 - [Rego Debugging Tool](https://github.com/fugue/fregot)
@@ -106,6 +130,8 @@
 ## NeuVector
 - [NeuVector Onboarding and Best Practices Guide](./documents/_GOOD_NV_Onboarding_5.0.pdf)   
 - [how to use minikube, install neuvector and debug](./2023/minikube-howto.md)
+- [Install NeuVector steps, start from scratch]
+    - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#*%20K8s%20installation&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={4199C511-0482-4B87-A93D-6DD3BC4F143F}&end`
 - NeuVector related,  
     - install manually with backup restore..
         - check this [How to restore, OneNote Work > Notes01]
