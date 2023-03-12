@@ -33,7 +33,7 @@
 👉 GitHub action  
 👉 how to mirror registry?    
 👉 k8s cert manager   
-👉👉 use lint to check neuvector code (consider to use golang 1.19 to compile it?)
+- 👉👉 use lint to check neuvector code (consider to use golang 1.19 to compile it?)
     - [How Static Code Analysis Prevents You From Waking Up at 3AM With Production on Fire](https://www.youtube.com/watch?v=cVUrScvthqs&ab_channel=Cadey)
     - [go vet](https://pkg.go.dev/cmd/vet)
     - [staticcheck](https://staticcheck.io/)
