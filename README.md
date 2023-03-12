@@ -44,9 +44,9 @@
     - `podman`, there is a book called `Podman for DevOps` 
     - container tool `cdebug`  
 - golang
-    - [gRPC video tutorail series](https://www.youtube.com/playlist?list=PLmD8u-IFdreyyTx93jJ5GkijwDXFqyr3T)
-👉 how to mirror registry?   
-👉 k8s cert manager
+    - [gRPC video tutorail series](https://www.youtube.com/playlist?list=PLmD8u-IFdreyyTx93jJ5GkijwDXFqyr3T)   
+👉 how to mirror registry?    
+👉 k8s cert manager   
 - cosign/sigstore related  
     - use GitHub Action to sign the image... I have done something..
 - admission controller, and I have develoepd a sample program with webui,, seems in the tools project.
