@@ -6,6 +6,27 @@
 - audiobook - how the future works
 - oreilly video - complete git guide  (by Bogdan), Packt publishing
 - oreilly video - jq command tutorials
+- Books 
+    - Kubernetes Patterns
+    - GitOps and Kubernetes
+    - Core Kubernetes
+    - Microservices Security in Action
+- Videos
+    - [It’s Complicated: Relationships Between Objects In OCI Registries](https://www.youtube.com/watch?v=VZckJNkJ0nQ&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D)
+    - [Life of a Sigstore Signature](https://www.youtube.com/watch?v=DrHrkSsozB0&list=PLj6h78yzYM2MUNId2hvHBnrGCCbmou_gl&index=48&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D)
+    - [GopherCon 2020: Jonathan Amsterdam - Working with Errors](https://www.youtube.com/watch?v=IKoSsJFdRtI&list=PL2ntRZ1ySWBfUint2hCE1JRxRWChloasB&index=47&t=9s&ab_channel=GopherAcademy)
+    - [How To Learn Something New? - Game Devlog #1](https://www.youtube.com/watch?v=LTlBElDPDDM&ab_channel=LiveOverflow)
+    - [Understanding user namespaces - Michael Kerrisk](https://www.youtube.com/watch?v=83NOk8pmHi8&ab_channel=foss-north)
+    - [Cgroups, namespaces, and beyond: what are containers made from?](https://www.youtube.com/watch?v=sK5i-N34im8&t=148s&ab_channel=Docker)
+    - [Containers series](https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz)
+    - [containerd - a secret hero of the Cloud Native world](https://www.youtube.com/watch?v=3_jUWW2j_TI&ab_channel=CloudNativeIslamabad)
+    - [This Is How Docker Works, The Fun Way!](https://www.youtube.com/watch?v=-NzfOhSAZpA&ab_channel=CodingTech)
+
+- Pluralsight
+    - [Deploying Stateful Applications in Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-deploying-stateful-applications/table-of-contents)
+    - [React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
+    - [Managing Ingress Traffic Patterns for Kubernetes Services](https://app.pluralsight.com/library/courses/managing-ingress-traffic-patterns-kubernetes-services/table-of-contents)
+    - [Concurrent Programming in Go](https://app.pluralsight.com/library/courses/go-programming-concurrent/table-of-contents)
 
 ## TODO
 👉 🆗 delve debug related   
@@ -23,6 +44,8 @@
     - `cosign`, `crane`  
     - `podman`, there is a book called `Podman for DevOps` 
     - container tool `cdebug`  
+- golang
+    - [gRPC video tutorail series](https://www.youtube.com/playlist?list=PLmD8u-IFdreyyTx93jJ5GkijwDXFqyr3T)
 👉 how to mirror registry?   
 👉 k8s cert manager
 - cosign/sigstore related  
