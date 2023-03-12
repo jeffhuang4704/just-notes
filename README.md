@@ -33,6 +33,10 @@
 👉 GitHub action  
 👉 how to mirror registry?    
 👉 k8s cert manager   
+👉👉 use lint to check neuvector code (consider to use golang 1.19 to compile it?)
+    - [How Static Code Analysis Prevents You From Waking Up at 3AM With Production on Fire](https://www.youtube.com/watch?v=cVUrScvthqs&ab_channel=Cadey)
+    - [go vet](https://pkg.go.dev/cmd/vet)
+    - [staticcheck](https://staticcheck.io/)
 
 ## OpenTelemetry
 - notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#OpenTelemetry&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={77BF0BDB-0FD3-4DBB-9001-A70BB7615D3C}&end3`
