@@ -19,7 +19,7 @@
     - [Cgroups, namespaces, and beyond: what are containers made from?](https://www.youtube.com/watch?v=sK5i-N34im8&t=148s&ab_channel=Docker)
     - [This Is How Docker Works, The Fun Way!](https://www.youtube.com/watch?v=-NzfOhSAZpA&ab_channel=CodingTech)
 
-## try to use table
+## Table usage..
 | Command | Description |
 | --- | --- |
 | git status | List all new or modified files |
@@ -53,7 +53,7 @@
 
 ## Kubernetes
 - [Plusalsight - Deploying Stateful Applications in Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-deploying-stateful-applications/table-of-contents)
-- [Plusalsight -Managing Ingress Traffic Patterns for Kubernetes Services](https://app.pluralsight.com/library/courses/managing-ingress-traffic-patterns-kubernetes-services/table-of-contents)
+- [Plusalsight - Managing Ingress Traffic Patterns for Kubernetes Services](https://app.pluralsight.com/library/courses/managing-ingress-traffic-patterns-kubernetes-services/table-of-contents)
 - [k8s admission control debugging](./2023/k8s-admission-control-debug.md)
 - [create servcie accont and use in kubeconfig](./2023/serviceaccount-kubeconfig.md)
 - [Create a Kubernetes TLS Ingress from scratch in Minikube](https://www.youtube.com/watch?v=7K0gAYmWWho&ab_channel=kubucation)
@@ -86,7 +86,8 @@
 - Notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#CKA&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={F29858C3-B14B-4CE1-A144-E4A20AC27542}&end`
 
 ## SAML/OIDC
-- notes (keycloak) - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#2022-12%20Part%20-6%20(keycloak,%20oidc)&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={B204B466-8DB7-4BFE-A5BB-D67DBDA9A2E8}&end`
+- notes 1(keycloak) - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#2022-12%20Part%20-6%20(keycloak,%20oidc)&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={B204B466-8DB7-4BFE-A5BB-D67DBDA9A2E8}&end`
+- notes 2 (keycloak, okta) - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\SAML_OIDC.one#Keycloak,%20okta%20config%20-%202022/12/28%20issue&section-id={EA6E4285-15ED-4D36-9E4B-A02E0D83C157}&page-id={6142F371-4F96-4DE8-9605-AC5F32C82943}&end`
 
 ## React
 - [React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
