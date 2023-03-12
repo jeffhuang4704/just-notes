@@ -11,8 +11,6 @@
     - Core Kubernetes
     - Microservices Security in Action
 - Videos
-    - oreilly video - complete git guide  (by Bogdan), Packt publishing
-    - oreilly video - jq command tutorials
     - [It’s Complicated: Relationships Between Objects In OCI Registries](https://www.youtube.com/watch?v=VZckJNkJ0nQ&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D)
     - [Life of a Sigstore Signature](https://www.youtube.com/watch?v=DrHrkSsozB0&list=PLj6h78yzYM2MUNId2hvHBnrGCCbmou_gl&index=48&ab_channel=CNCF%5BCloudNativeComputingFoundation%5D)
     - [GopherCon 2020: Jonathan Amsterdam - Working with Errors](https://www.youtube.com/watch?v=IKoSsJFdRtI&list=PL2ntRZ1ySWBfUint2hCE1JRxRWChloasB&index=47&t=9s&ab_channel=GopherAcademy)
