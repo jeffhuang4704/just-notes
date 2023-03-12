@@ -1,5 +1,12 @@
 ## minikube 
 
+### Notes
+- notes 1 (mount volume, ssh tunnel, load balancing)
+  - Deploying Stateful Applications in Kubernetes (has a nfs server, minikube volume example)
+  - minikube example, deployment and expose service
+  - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#minikube&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={6628C918-8152-4C7A-B005-04918D5EBF27}&end`
+
+
 ### on an Ubuntu box
 ```
 install docker, https://docs.docker.com/engine/install/ubuntu/
