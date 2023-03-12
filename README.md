@@ -69,6 +69,10 @@
     - [article](https://github.com/elithrar/admission-control#configuring-a-server)
     - [example](https://docs.giantswarm.io/advanced/custom-admission-controller/)
     - [TLS certificate notes for Webhook](https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/kubernetes/admissioncontrollers/introduction/README.md)
+- client-go programming
+    - [client-go-example by Ivan Velichko](https://github.com/iximiuz/client-go-examples)
+- CRD
+    - [Check videos from Vivek Singh](https://www.youtube.com/@viveksinghggits)
 
 ## React
 - [React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
