@@ -50,6 +50,9 @@
 - [YouTube - containerd - a secret hero of the Cloud Native world](https://www.youtube.com/watch?v=3_jUWW2j_TI&ab_channel=CloudNativeIslamabad)
 
 ## Kubernetes
+
+<details><summary>more</summary>
+
 - [k8s admission control debugging](./2023/k8s-admission-control-debug.md)
 - [create servcie accont and use in kubeconfig](./2023/serviceaccount-kubeconfig.md)
 - [Create a Kubernetes TLS Ingress from scratch in Minikube](https://www.youtube.com/watch?v=7K0gAYmWWho&ab_channel=kubucation)
@@ -62,6 +65,7 @@
     - [Plusalsight - Deploying Stateful Applications in Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-deploying-stateful-applications/table-of-contents)
     - [Plusalsight - Managing Ingress Traffic Patterns for Kubernetes Services](https://app.pluralsight.com/library/courses/managing-ingress-traffic-patterns-kubernetes-services/table-of-contents)
     - [Plusalsight - Packaging Applications with Helm for Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-packaging-applications-helm/table-of-contents)
+</details>
 
 ## Kubernetes development
 - Admission Control
