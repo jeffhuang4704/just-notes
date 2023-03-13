@@ -68,6 +68,9 @@
 </details>
 
 ## Kubernetes development
+
+<details><summary>more</summary>
+
 - Admission Control
     - some notes (part 1).. `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#Admission%20Webhook&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={D237EEAA-0F32-42B9-B895-E19E89C17E5C}&end`
     - some notes (part 2).. `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#Webhook%20steps&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={311709A4-3EA4-4ED2-AA92-E9FF1E419EBA}&end`
@@ -85,6 +88,7 @@
 - CRD
     - [Check videos from Vivek Singh](https://www.youtube.com/@viveksinghggits)
     - notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#K8s%20CRD&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={BC4AC015-2F05-46BC-9790-05EBD00A1075}&end`
+</details>
 
 ## CKA
 - Notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#CKA&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={F29858C3-B14B-4CE1-A144-E4A20AC27542}&end`
@@ -174,23 +178,34 @@
     - debug program running in k8s container
 
 ## C#
+
+<details><summary>more</summary>
+
 - C# ADO.NET sample code
 - C# dependency injection in console program
 - asp.net core identity part.... bootstrap,, I have some notes on it..  check `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#2023-01%20Part%20-8&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={DE7FFAC4-47A0-4F46-9760-529C0951196D}&end`
 - asp.net core identity, add google as login method...
 - ef core migration
 - ef core in console
+</details>
 
 ## React
+
+<details><summary>more</summary>
+
 - Use the online IDE to develop React, [Stackblitz](https://stackblitz.com/)
 - [React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
 - [Using Hooks in React 18](https://app.pluralsight.com/library/courses/react-18-using-hooks/table-of-contents)
 - [Working with Components in React 18](https://app.pluralsight.com/library/courses/react-18-working-components/table-of-contents)
+</details>
 
 ## CSS
 - list the course I bought from Kevin
 
 ## Misc.
+
+<details><summary>more</summary>
+
 - [Vim](./2023/vim-part1.md)
 - [SSH Tunnel, connect to host behind NAT](./2023/ssh-tunnel.md)   
 - [private registry usage](./2023/private-registry.md)
@@ -200,3 +215,4 @@
     - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={7E7F2D08-1FB9-4C77-984F-2C3ADB680E07}&DB`
 - How to generate certificate, so it can be used in testing web server, or admission control,,, check the book "Microservices Security in Action", the appendix G
 - [generate cert in Makefile](https://github.com/kubernetes/pod-security-admission/tree/master/webhook)
+</details>
