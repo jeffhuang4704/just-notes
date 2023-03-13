@@ -78,7 +78,7 @@
 
 ## CKA
 - Notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#CKA&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={F29858C3-B14B-4CE1-A144-E4A20AC27542}&end`
-- list the tech nana's course...
+- [TechWorld with Nana - Kubernetes Administrator Course](https://techworld-with-nana.teachable.com/)
 
 ## SAML/OIDC
 - notes 1(keycloak) - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#2022-12%20Part%20-6%20(keycloak,%20oidc)&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={B204B466-8DB7-4BFE-A5BB-D67DBDA9A2E8}&end`
@@ -133,7 +133,7 @@
         - add environment variables..
     - add `nodePort` service for controller so we can call rest directly easier
 - how to do private build of controller container image and publish to docker
-- restore from backup..  
+- [restore from backup] - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#Debug%20Controller%20(1)&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={65EA81B0-687C-4BB6-8710-AD46241F20B9}&object-id={70519DEF-A10F-0E11-2314-829DCDA913E8}&16`
 - build script   
 - grpc build script   
 - when add a new grpc, what's the step
