@@ -72,6 +72,7 @@
     - [client-go-example by Ivan Velichko](https://github.com/iximiuz/client-go-examples)
     - notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#client-go%20part%201&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={53CFB322-523F-4576-B81E-6BE3505318B8}&end`
     - notes 2 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#client-go%20part%202&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={BEE6C30E-C0DB-4615-9722-0AE69784793D}&end`
+    - `kubectl who-can`, nice source code to study - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#kubectl%20who-can&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={062E7C49-ECA6-4A42-AAFB-A1D376AE2B85}&end`
 - CRD
     - [Check videos from Vivek Singh](https://www.youtube.com/@viveksinghggits)
     - notes 1 - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one#K8s%20CRD&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={BC4AC015-2F05-46BC-9790-05EBD00A1075}&end`
