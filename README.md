@@ -2,7 +2,8 @@
 
 ## To study
 
-<details><summary>CLICK ME</summary>
+<details><summary>more</summary>
+
 - Articles
 - Audiobook
     - audiobook - the 5-minute interview
