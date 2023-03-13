@@ -56,6 +56,7 @@
     - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#RBAC%20-%20User%20%20Permissions&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={82499009-2B87-4C45-89A7-815E06FA123F}&end`
 - [很好的練習, use simple scripts to call k8s apis]
     - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-05%20Part%20-5&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={6C311090-AC10-4EF5-A4A0-A2E7350723FF}&object-id={4786CD3D-0FF2-477B-92F3-078EEE5381CF}&B`
+- [Packaging Applications with Helm for Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-packaging-applications-helm/table-of-contents)
 
 
 ## Kubernetes development
@@ -143,6 +144,7 @@
     - how it works
     - notes - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work2\Notes-01.one#Federation,%20KV%20Store%20Sync&section-id={52646D5D-AE0F-4403-A1FE-FB6BA9C4E501}&page-id={26B3B10C-CE3E-4EE9-9990-5DF51FFF525E}&end`
 - Python CLI - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#Python%20CLI&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={078BFE7D-2195-49E4-A97E-5F8AA1F29DBF}&end`
+- add a sidecar container, check the `nvdig` project I did - [nvdig](https://github.com/jeffhuang4704/nvdig)
 
 ## Golang
 - [nice golang resources](./2023/golang-part1.md)
@@ -165,9 +167,16 @@
 ## C#
 - C# ADO.NET sample code
 - C# dependency injection in console program
+- asp.net core identity part.... bootstrap,, I have some notes on it..  check `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#2023-01%20Part%20-8&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={DE7FFAC4-47A0-4F46-9760-529C0951196D}&end`
+- asp.net core identity, add google as login method...
+- ef core migration
+- ef core in console
 
 ## React
+- Use the online IDE to develop React, [Stackblitz](https://stackblitz.com/)
 - [React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
+- [Using Hooks in React 18](https://app.pluralsight.com/library/courses/react-18-using-hooks/table-of-contents)
+- [Working with Components in React 18](https://app.pluralsight.com/library/courses/react-18-working-components/table-of-contents)
 
 ## CSS
 - list the course I bought from Kevin
