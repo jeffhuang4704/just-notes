@@ -1,6 +1,8 @@
 # just-notes
 
 ## To study
+
+<details><summary>CLICK ME</summary>
 - Articles
 - Audiobook
     - audiobook - the 5-minute interview
@@ -18,6 +20,7 @@
     - [Understanding user namespaces - Michael Kerrisk](https://www.youtube.com/watch?v=83NOk8pmHi8&ab_channel=foss-north)
     - [Cgroups, namespaces, and beyond: what are containers made from?](https://www.youtube.com/watch?v=sK5i-N34im8&t=148s&ab_channel=Docker)
     - [This Is How Docker Works, The Fun Way!](https://www.youtube.com/watch?v=-NzfOhSAZpA&ab_channel=CodingTech)
+</details>
 
 ## Table usage..
 | Command | Description |
@@ -57,7 +60,7 @@
 - Learning
     - [Plusalsight - Deploying Stateful Applications in Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-deploying-stateful-applications/table-of-contents)
     - [Plusalsight - Managing Ingress Traffic Patterns for Kubernetes Services](https://app.pluralsight.com/library/courses/managing-ingress-traffic-patterns-kubernetes-services/table-of-contents)
-    - [Packaging Applications with Helm for Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-packaging-applications-helm/table-of-contents)
+    - [Plusalsight - Packaging Applications with Helm for Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-packaging-applications-helm/table-of-contents)
 
 ## Kubernetes development
 - Admission Control
