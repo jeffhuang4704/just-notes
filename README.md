@@ -132,7 +132,8 @@
 - OPA print function (nice debug mechanism) `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-02.one#2022-07%20Part%20-2&section-id={955E51B5-E20C-4DED-8FB6-5D34F6115376}&page-id={B3BA7FF6-79B0-473C-95EA-4576EF17F33B}&object-id={9A28311D-C346-4431-A976-D09ED4D85875}&B`
 
 ## NeuVector
-- [Daily dev notes 1](./2023/neuvector-daily-dev-notes-part1.md)
+- [dev notes 1](./2023/neuvector-daily-dev-notes-part1.md)
+    - `jira, jenkins, vpn, git branch, etc`
 - [NeuVector Onboarding and Best Practices Guide](./documents/_GOOD_NV_Onboarding_5.0.pdf)   
 - [how to use minikube, install neuvector and debug](./2023/minikube-howto.md)
 - [Install NeuVector steps, start from scratch]
