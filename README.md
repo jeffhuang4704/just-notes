@@ -46,8 +46,6 @@
 - [YouTube - containerd - a secret hero of the Cloud Native world](https://www.youtube.com/watch?v=3_jUWW2j_TI&ab_channel=CloudNativeIslamabad)
 
 ## Kubernetes
-- [Plusalsight - Deploying Stateful Applications in Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-deploying-stateful-applications/table-of-contents)
-- [Plusalsight - Managing Ingress Traffic Patterns for Kubernetes Services](https://app.pluralsight.com/library/courses/managing-ingress-traffic-patterns-kubernetes-services/table-of-contents)
 - [k8s admission control debugging](./2023/k8s-admission-control-debug.md)
 - [create servcie accont and use in kubeconfig](./2023/serviceaccount-kubeconfig.md)
 - [Create a Kubernetes TLS Ingress from scratch in Minikube](https://www.youtube.com/watch?v=7K0gAYmWWho&ab_channel=kubucation)
@@ -56,8 +54,10 @@
     - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#RBAC%20-%20User%20%20Permissions&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={82499009-2B87-4C45-89A7-815E06FA123F}&end`
 - [很好的練習, use simple scripts to call k8s apis]
     - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-05%20Part%20-5&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={6C311090-AC10-4EF5-A4A0-A2E7350723FF}&object-id={4786CD3D-0FF2-477B-92F3-078EEE5381CF}&B`
-- [Packaging Applications with Helm for Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-packaging-applications-helm/table-of-contents)
-
+- Learning
+    - [Plusalsight - Deploying Stateful Applications in Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-deploying-stateful-applications/table-of-contents)
+    - [Plusalsight - Managing Ingress Traffic Patterns for Kubernetes Services](https://app.pluralsight.com/library/courses/managing-ingress-traffic-patterns-kubernetes-services/table-of-contents)
+    - [Packaging Applications with Helm for Kubernetes](https://app.pluralsight.com/library/courses/kubernetes-packaging-applications-helm/table-of-contents)
 
 ## Kubernetes development
 - Admission Control
@@ -98,6 +98,7 @@
 - `podman`, there is a book called `Podman for DevOps` 
 - container tool `cdebug`  
 - OAuth2c: user-friendly OAuth CLI
+- [ngrok, secure tunnels to localhost... expose localhost behind NAt to internet](https://blog.ngrok.com/posts/ngrok-go)
 
 ## Sigstore, Cosign
 - [notes on Git Hub Action - cosign keyless sign] - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one# Sigstore/Cosign (5)&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={D43B7EA6-C868-4DB7-A0B6-1E9F2FB168A1}&end`
