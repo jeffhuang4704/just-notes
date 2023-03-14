@@ -35,7 +35,7 @@
 👉 GCP usage (how to start a VM, etc)   
 👉 ldap related   
 👉 GitHub action  
-👉 how to mirror registry?    
+👉 how to mirror registry?  `crane` seems can do it..   
 👉 k8s cert manager   
 - 👉👉 use lint to check neuvector code (consider to use golang 1.19 to compile it?)
     - [How Static Code Analysis Prevents You From Waking Up at 3AM With Production on Fire](https://www.youtube.com/watch?v=cVUrScvthqs&ab_channel=Cadey)
@@ -189,6 +189,11 @@
 - asp.net core identity, add google as login method...
 - ef core migration
 - ef core in console
+- asp.net core identity - create our own user to extend properties (claims), - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#2023-01%20Part%20-8&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={DE7FFAC4-47A0-4F46-9760-529C0951196D}&object-id={DEE22CF1-6D3F-49AD-AAC3-B90D691C88DF}&35`
+- some asp.net core identity related info (claim, policy, oauth), c# - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#2023-01%20Part%20-8&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={DE7FFAC4-47A0-4F46-9760-529C0951196D}&end`
+- Nice asp.net core identity, user store stuff, - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#2023-01%20Part%20-8&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={DE7FFAC4-47A0-4F46-9760-529C0951196D}&object-id={3905789C-76BD-4AEB-893F-3D236366E7A6}&6F`
+- Run ASP.NET Core 3.1 Apps in Docker with HTTPS - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#2023-01%20Part%20-8&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={DE7FFAC4-47A0-4F46-9760-529C0951196D}&object-id={3905789C-76BD-4AEB-893F-3D236366E7A6}&2D`
+- ef core 5.x, many-to-many relationship, - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work5\Notes-1.one#2023-01%20Part%20-8&section-id={2F66D987-20DB-432B-95D1-0351E2341ECC}&page-id={DE7FFAC4-47A0-4F46-9760-529C0951196D}&object-id={BF5606F9-5DC3-4B1A-809F-1A0A9126F1A0}&3F`
 </details>
 
 ## React
