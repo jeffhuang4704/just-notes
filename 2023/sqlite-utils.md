@@ -19,6 +19,45 @@ neuvector@ubuntu2204d:~/tmp$ cat simple.json | jq '.["/v1/log/activity"].events 
 // export to sqlite
 neuvector@ubuntu2204d:~/tmp$ cat simple.json | jq '.["/v1/log/activity"].events' | sqlite-utils insert events.db events -
 
+// the db and schema is create automatically 
+neuvector@ubuntu2204d:~/tmp$ sqlite3 events.db
+SQLite version 3.37.2 2022-01-06 13:25:41
+Enter ".help" for usage hints.
+sqlite> .schema
+CREATE TABLE [eventss] (
+   [action] TEXT,
+   [aggregation_from] INTEGER,
+   [cluster_name] TEXT,
+   [count] INTEGER,
+   [enforcer_id] TEXT,
+   [enforcer_name] TEXT,
+   [host_id] TEXT,
+   [host_name] TEXT,
+   [id] TEXT,
+   [level] TEXT,
+   [message] TEXT,
+   [name] TEXT,
+   [proc_cmd] TEXT,
+   [proc_effective_uid] INTEGER,
+   [proc_effective_user] TEXT,
+   [proc_name] TEXT,
+   [proc_parent_name] TEXT,
+   [proc_path] TEXT,
+   [proc_real_uid] INTEGER,
+   [proc_real_user] TEXT,
+   [reported_at] TEXT,
+   [reported_timestamp] INTEGER,
+   [rule_id] TEXT,
+   [group] TEXT,
+   [proc_parent_path] TEXT,
+   [workload_domain] TEXT,
+   [workload_id] TEXT,
+   [workload_image] TEXT,
+   [workload_name] TEXT,
+   [workload_service] TEXT
+);
+
+
 // view it
 neuvector@ubuntu2204d:~/tmp$ sqlite3 events.db
 SQLite version 3.37.2 2022-01-06 13:25:41
