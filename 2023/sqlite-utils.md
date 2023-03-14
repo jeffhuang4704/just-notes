@@ -4,6 +4,24 @@
 
 - [sqlite-utils, intro](https://jvns.ca/blog/2022/05/12/sqlite-utils--a-nice-way-to-import-data-into-sqlite/)
 
+## some notes
+
+```
+.schema
+.exit
+.tables
+.schema tables
+
+.output output.txt
+.once output.txt
+select * from table;
+
+.mode csv
+.once filename
+// export 2 csv
+select * table; 
+```
+
 ## example
 
 ```

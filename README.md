@@ -111,7 +111,7 @@
 - container tool `cdebug`  
 - OAuth2c: user-friendly OAuth CLI
 - [ngrok, secure tunnels to localhost... expose localhost behind NAt to internet](https://blog.ngrok.com/posts/ngrok-go)
-- [import json file into sqlite db automatically, sqlite-utils](./2023/sqlite-utils.md)
+- [sqlite related, import json file into sqlite db automatically, sqlite-utils](./2023/sqlite-utils.md)
 
 ## Sigstore, Cosign
 - [notes on Git Hub Action - cosign keyless sign] - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one# Sigstore/Cosign (5)&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={D43B7EA6-C868-4DB7-A0B6-1E9F2FB168A1}&end`
