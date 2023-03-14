@@ -1,9 +1,5 @@
 # import json file into sqlite automatically
 
-## tool sqlite-util 
-
-- [sqlite-utils, intro](https://jvns.ca/blog/2022/05/12/sqlite-utils--a-nice-way-to-import-data-into-sqlite/)
-
 ## some notes
 
 ```
@@ -16,13 +12,20 @@
 .once output.txt
 select * from table;
 
+// it supports many output format: ascii box column csv html insert json line list markdown quote table tabs tcl
 .mode csv
-.once filename
-// export 2 csv
+.once out1.csv
+
+// export 2 csv, the select output will be written to the file
 select * table; 
 ```
 
-## example
+## tool sqlite-util 
+
+- [sqlite-utils, intro](https://jvns.ca/blog/2022/05/12/sqlite-utils--a-nice-way-to-import-data-into-sqlite/)
+
+
+## sqlite-util usage notes
 
 ```
 // use jq to view json
