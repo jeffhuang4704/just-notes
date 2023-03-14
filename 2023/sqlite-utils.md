@@ -39,6 +39,7 @@ neuvector@ubuntu2204d:~/tmp$ cat simple.json | jq '.["/v1/log/activity"].events 
 
 // export to sqlite
 neuvector@ubuntu2204d:~/tmp$ cat simple.json | jq '.["/v1/log/activity"].events' | sqlite-utils insert events.db events -
+neuvector@ubuntu2204d:~/tmp$ jq '.["/v1/log/activity"].events' simple.json | sqlite-utils insert test.db events -
 
 // the db and schema is create automatically 
 neuvector@ubuntu2204d:~/tmp$ sqlite3 events.db

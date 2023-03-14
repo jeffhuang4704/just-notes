@@ -204,7 +204,10 @@
 </details>
 
 ## CSS
-- list the course I bought from Kevin
+
+- [Kevin Powell, CSS Demystified, Flexbox Simplified](https://courses.kevinpowell.co/login)
+- [Kevin Powell, Learn Responsive Web Design](https://scrimba.com/)
+- [Kevin Powell, Beyond CSS, 4 Module](https://complete.beyondcss.dev/)
 
 ## Misc.
 
