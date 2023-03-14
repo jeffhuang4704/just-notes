@@ -111,6 +111,7 @@
 - container tool `cdebug`  
 - OAuth2c: user-friendly OAuth CLI
 - [ngrok, secure tunnels to localhost... expose localhost behind NAt to internet](https://blog.ngrok.com/posts/ngrok-go)
+- [import json file into sqlite db automatically, sqlite-utils](./2023/sqlite-utils.md)
 
 ## Sigstore, Cosign
 - [notes on Git Hub Action - cosign keyless sign] - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work4\Notes-1.one# Sigstore/Cosign (5)&section-id={1D02D4D6-56CA-42D6-8318-F2060FC425CD}&page-id={D43B7EA6-C868-4DB7-A0B6-1E9F2FB168A1}&end`
@@ -195,9 +196,11 @@
 <details><summary>more</summary>
 
 - Use the online IDE to develop React, [Stackblitz](https://stackblitz.com/)
-- [React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
-- [Using Hooks in React 18](https://app.pluralsight.com/library/courses/react-18-using-hooks/table-of-contents)
-- [Working with Components in React 18](https://app.pluralsight.com/library/courses/react-18-working-components/table-of-contents)
+- [Pluralsight - React 17: Getting Started](https://app.pluralsight.com/library/courses/react-js-getting-started/table-of-contents)
+- [Pluralsight - Using Hooks in React 18](https://app.pluralsight.com/library/courses/react-18-using-hooks/table-of-contents)
+- [Pluralsight - Working with Components in React 18](https://app.pluralsight.com/library/courses/react-18-working-components/table-of-contents)
+- Scrimba - Learn React
+- Scrimba - Advanced React
 </details>
 
 ## CSS
@@ -216,4 +219,5 @@
     - `onenote:///C:\Users\Chih-JenHuang\Documents\OneNote%20Notebooks\Work\Notes-01.one#2022-04%20Part-1&section-id={385CC646-19A9-479B-84B9-16C80EAB4662}&page-id={CC7EAB50-073E-4F1A-B813-93A92C95A974}&object-id={7E7F2D08-1FB9-4C77-984F-2C3ADB680E07}&DB`
 - How to generate certificate, so it can be used in testing web server, or admission control,,, check the book "Microservices Security in Action", the appendix G
 - [generate cert in Makefile](https://github.com/kubernetes/pod-security-admission/tree/master/webhook)
+- I remembered there's a sqlite tool which can convert json file (or csv) to sqlite,,, it seems cool... find it out.
 </details>
